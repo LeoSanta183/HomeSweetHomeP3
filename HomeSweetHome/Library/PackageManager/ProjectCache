@@ -1,33 +1,33 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHomeP3/HomeSweetHome/Packages/manifest.json
+    m_FilePath: E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638457908483124196
-    m_Hash: 1718529583
+      ticks: 638458388345524231
+    m_Hash: 1935620122
   m_LockFileStatus:
-    m_FilePath: H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHomeP3/HomeSweetHome/Packages/packages-lock.json
+    m_FilePath: E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638457908483594585
-    m_Hash: 3743980676
+      ticks: 638458388345803987
+    m_Hash: 1532273806
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHomeP3/HomeSweetHome/Packages
-m_EditorVersion: 2022.3.7f1 (b16b3b16c7a0)
+m_ProjectPath: E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome/Packages
+m_EditorVersion: 2021.3.5f1 (40eb3a945986)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.3.1
   testable: 0
   isDirectDependency: 1
   version: 2.3.1
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.collab-proxy@2.3.1
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.collab-proxy@2.3.1
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -40,7 +40,7 @@ m_ResolvedPackages:
   description: The package gives you the ability to use Unity Version Control in
     the Unity editor. To use Unity Version Control, a subscription is required. Learn
     more about how you can get started for free by visiting https://unity.com/solutions/version-control
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -116,6 +116,23 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     compatible:
+    - 1.15.18
+    - 1.17.0
+    - 1.17.1
+    - 1.17.2
+    - 1.17.6
+    - 1.17.7
+    - 2.0.0-preview.6
+    - 2.0.0-preview.8
+    - 2.0.0-preview.15
+    - 2.0.0-preview.17
+    - 2.0.0-preview.20
+    - 2.0.0-preview.21
+    - 2.0.0-preview.22
+    - 2.0.0
+    - 2.0.1
+    - 2.0.3
+    - 2.0.4
     - 2.0.5
     - 2.0.7
     - 2.1.0-preview.3
@@ -124,8 +141,7 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     - 2.3.1
-    recommended: 2.0.7
-    deprecated: []
+    verified: 1.15.18
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -150,8 +166,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638448201880000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.3/manual/index.html
@@ -162,19 +177,14 @@ m_ResolvedPackages:
     revision: 613362ccb4468f55ee42e0a35809fb9a61f3f8f1
     path: 
   unityLifecycle:
-    version: 2.0.5
+    version: 1.15.18
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.feature.development@1.0.1
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.feature.development@1.0.1
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -188,15 +198,14 @@ m_ResolvedPackages:
     feature set. Enable support for multiple integrated development environments
     (IDE) for editing your Unity code. Get access to development tools to help you
     test and analyze your project\u2019s performance."
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.1
     compatible:
     - 1.0.1
-    recommended: 1.0.1
-    deprecated: []
+    verified: 1.0.1
   dependencies:
   - name: com.unity.ide.visualstudio
     version: default
@@ -214,9 +223,9 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.18
+    version: 2.0.15
   - name: com.unity.test-framework
-    version: 1.1.33
+    version: 1.1.31
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -224,17 +233,17 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.24
+    version: 3.0.14
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
     version: 1.0.0
   - name: com.unity.performance.profile-analyzer
-    version: 1.2.2
+    version: 1.1.1
   - name: com.unity.testtools.codecoverage
-    version: 1.2.4
+    version: 1.0.1
   - name: com.unity.settings-manager
-    version: 2.0.1
+    version: 1.0.3
   keywords: []
   registry:
     id: main
@@ -243,8 +252,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 0
   documentationUrl: 
@@ -257,17 +265,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.shadergraph@14.0.8
+- packageId: com.unity.shadergraph@12.1.7
   testable: 0
   isDirectDependency: 1
-  version: 14.0.8
+  version: 12.1.7
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.shadergraph@14.0.8
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.shadergraph@12.1.7
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -282,7 +285,7 @@ m_ResolvedPackages:
     Specific render pipelines can implement specific graph features. Currently, both
     the High Definition Rendering Pipeline and the Universal Rendering Pipeline support
     Shader Graph.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -383,19 +386,18 @@ m_ResolvedPackages:
     - 10.9.0
     - 10.10.0
     - 10.10.1
-    - 14.0.8
+    - 12.1.7
     compatible:
-    - 14.0.8
-    recommended: 14.0.8
-    deprecated: []
+    - 12.1.7
+    verified: 12.1.7
   dependencies:
   - name: com.unity.render-pipelines.core
-    version: 14.0.8
+    version: 12.1.7
   - name: com.unity.searcher
-    version: 4.9.2
+    version: 4.9.1
   resolvedDependencies:
   - name: com.unity.render-pipelines.core
-    version: 14.0.8
+    version: 12.1.7
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
@@ -404,12 +406,10 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
-  - name: com.unity.modules.terrain
-    version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.searcher
-    version: 4.9.2
+    version: 4.9.1
   keywords: []
   registry:
     id: main
@@ -418,7 +418,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -430,19 +429,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 14.0.8
+    version: 12.1.7
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.textmeshpro@3.0.6
+- packageId: com.unity.textmeshpro@3.0.8
   testable: 0
   isDirectDependency: 1
-  version: 3.0.6
+  version: 3.0.8
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.textmeshpro@3.0.8
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -451,7 +445,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Text Rendering
-  type: asset
+  type: assets
   description: 'TextMeshPro is the ultimate text solution for Unity. It''s the perfect
     replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -472,7 +466,7 @@ m_ResolvedPackages:
     Great performance. Since the geometry created by TextMeshPro
     uses two triangles per character just like Unity''s text components, this improved
     visual quality and flexibility comes at no additional performance cost.'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -582,10 +576,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.7
     - 3.2.0-pre.8
     - 3.2.0-pre.9
-    - 4.0.0-pre.1
-    - 4.0.0-pre.2
-    recommended: 3.0.8
-    deprecated: []
+    verified: 3.0.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -609,31 +600,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637547111200000000
-  documentationUrl: 
+  datePublishedTicks: 638433339070000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.textmeshpro.git
-    revision: 01e57e3b7de18af9dfe9baaa0a0ff5cc4765c899
+    revision: dd92f03985c9bda38a4721cc146a6b74d2832a1f
     path: 
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.timeline@1.7.5
   testable: 0
   isDirectDependency: 1
   version: 1.7.5
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.timeline@1.7.5
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.timeline@1.7.5
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -645,7 +630,7 @@ m_ResolvedPackages:
   type: assets
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -735,6 +720,15 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     compatible:
+    - 1.6.4
+    - 1.6.5
+    - 1.7.0-pre.1
+    - 1.7.0-pre.2
+    - 1.7.0
+    - 1.7.1
+    - 1.7.2
+    - 1.7.3
+    - 1.7.4
     - 1.7.5
     - 1.7.6
     - 1.8.0
@@ -744,8 +738,7 @@ m_ResolvedPackages:
     - 1.8.4
     - 1.8.5
     - 1.8.6
-    recommended: 1.7.6
-    deprecated: []
+    verified: 1.6.5
   dependencies:
   - name: com.unity.modules.director
     version: 1.0.0
@@ -777,8 +770,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 638229649600000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.7/manual/index.html
@@ -789,19 +781,14 @@ m_ResolvedPackages:
     revision: fdb1ca9a2c2a131e0ff9cb257b2eae3b53337b3a
     path: 
   unityLifecycle:
-    version: 1.7.5
+    version: 1.6.4
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -815,7 +802,7 @@ m_ResolvedPackages:
     and applications. It is a GameObject-based UI system that uses Components and
     the Game View to arrange, position, and style user interfaces. \u200B You cannot
     use Unity UI to create or change user interfaces in the Unity Editor."
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -824,8 +811,7 @@ m_ResolvedPackages:
     - 3.0.0-exp.3
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -848,7 +834,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -862,17 +847,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.visualscripting@1.8.0
   testable: 0
   isDirectDependency: 1
   version: 1.8.0
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -894,7 +874,7 @@ m_ResolvedPackages:
 
     Visual scripting is compatible with third-party
     APIs, including most packages, assets and custom libraries.'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -919,13 +899,12 @@ m_ResolvedPackages:
     - 1.9.1
     - 1.9.2
     compatible:
+    - 1.7.8
     - 1.8.0
     - 1.9.0
     - 1.9.1
     - 1.9.2
-    recommended: 1.8.0
-    deprecated:
-    - 1.8.0-pre.1
+    verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -948,7 +927,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 638060044680000000
@@ -960,19 +938,14 @@ m_ResolvedPackages:
     revision: 0de66378b19e990494d98f39ecc2b6aa5ac65351
     path: 
   unityLifecycle:
-    version: 1.8.0
+    version: 1.7.8
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -984,15 +957,14 @@ m_ResolvedPackages:
   type: module
   description: 'The AI module implements the path finding features in Unity. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1003,7 +975,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1017,17 +988,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.androidjni@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1038,15 +1004,14 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'AndroidJNI module allows you to call Java code. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AndroidJNIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1057,7 +1022,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1071,17 +1035,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.animation@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1093,15 +1052,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Animation module implements Unity''s animation system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.AnimationModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1112,7 +1070,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1126,17 +1083,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.assetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1148,15 +1100,14 @@ m_ResolvedPackages:
   type: module
   description: 'The AssetBundle module implements the AssetBundle class and related
     APIs to load data from AssetBundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.AssetBundleModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1167,7 +1118,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1181,17 +1131,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.audio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1203,15 +1148,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Audio module implements Unity''s audio system. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.AudioModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1222,7 +1166,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1236,17 +1179,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.cloth@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1258,15 +1196,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Cloth module implements cloth physics simulation through the
     Cloth component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ClothModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1281,7 +1218,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1295,17 +1231,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.director@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1317,15 +1248,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Director module implements the PlayableDirector class. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.DirectorModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -1344,7 +1274,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1358,17 +1287,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.imageconversion@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1381,15 +1305,14 @@ m_ResolvedPackages:
   description: 'The ImageConversion module implements the ImageConversion class which
     provides helper methods to convert images from and to PNG, JPEG or EXR formats.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ImageConversionModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1400,7 +1323,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1414,17 +1336,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.imgui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1436,15 +1353,14 @@ m_ResolvedPackages:
   type: module
   description: 'The IMGUI module provides Unity''s immediate mode GUI solution for
     creating in-game and editor user interfaces. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.IMGUIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1455,7 +1371,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1469,17 +1384,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.jsonserialize@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1491,15 +1401,14 @@ m_ResolvedPackages:
   type: module
   description: 'The JSONSerialize module provides the JsonUtility class which lets
     you serialize Unity Objects to JSON format. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.JSONSerializeModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1510,7 +1419,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1524,17 +1432,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.particlesystem@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1546,15 +1449,14 @@ m_ResolvedPackages:
   type: module
   description: 'The ParticleSystem module implements Unity''s Particle System. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.ParticleSystemModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1565,7 +1467,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1579,17 +1480,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.physics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1601,15 +1497,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics module implements 3D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.PhysicsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1620,7 +1515,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1634,17 +1528,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.physics2d@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1656,15 +1545,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Physics2d module implements 2D physics in Unity. Scripting API:
     https://docs.unity3d.com/ScriptReference/UnityEngine.Physics2DModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1675,7 +1563,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1689,17 +1576,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.screencapture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1711,15 +1593,14 @@ m_ResolvedPackages:
   type: module
   description: 'The ScreenCapture module provides functionality to take screen shots
     using the ScreenCapture class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.ScreenCaptureModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.imageconversion
     version: 1.0.0
@@ -1734,7 +1615,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1748,17 +1628,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.terrain@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1770,15 +1645,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Terrain module implements Unity''s Terrain rendering engine available
     through the Terrain component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1789,7 +1663,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1803,17 +1676,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.terrainphysics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1825,15 +1693,14 @@ m_ResolvedPackages:
   type: module
   description: 'The TerrainPhysics module connects the Terrain and Physics modules
     by implementing the TerrainCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TerrainPhysicsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -1852,7 +1719,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1866,17 +1732,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.tilemap@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1887,15 +1748,14 @@ m_ResolvedPackages:
   category: 
   type: module
   description: 'The Tilemap module implements the Tilemap class. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.TilemapModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics2d
     version: 1.0.0
@@ -1910,7 +1770,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1924,17 +1783,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.ui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -1946,15 +1800,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UI module implements basic components required for Unity''s UI
     system Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -1965,7 +1818,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -1979,17 +1831,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.uielements@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2001,15 +1848,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UIElements module implements the UIElements retained mode UI
     framework. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UIElementsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
@@ -2017,12 +1863,16 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
+  - name: com.unity.modules.uielementsnative
+    version: 1.0.0
   resolvedDependencies:
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.modules.uielementsnative
     version: 1.0.0
   keywords: []
   registry:
@@ -2032,7 +1882,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2046,17 +1895,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.umbra@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2068,15 +1912,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Umbra module implements Unity''s occlusion culling system. Scripting
     API: https://docs.unity3d.com/ScriptReference/UnityEngine.UmbraModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2087,7 +1930,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2101,17 +1943,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unityanalytics@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2123,15 +1960,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityAnalytics module implements APIs required to use Unity Analytics.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityAnalyticsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2150,7 +1986,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2164,17 +1999,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequest@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2186,15 +2016,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequest module lets you communicate with http services.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2205,7 +2034,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2219,17 +2047,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestassetbundle@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2241,15 +2064,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAssetBundle module provides the DownloadHandlerAssetBundle
     class to use UnityWebRequest to download Asset Bundles. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAssetBundleModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.assetbundle
     version: 1.0.0
@@ -2268,7 +2090,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2282,17 +2103,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestaudio@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2304,15 +2120,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestAudio module provides the DownloadHandlerAudioClip
     class to use UnityWebRequest to download AudioClips. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestAudioModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2331,7 +2146,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2345,17 +2159,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequesttexture@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2367,15 +2176,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestTexture module provides the DownloadHandlerTexture
     class to use UnityWebRequest to download Textures. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestTextureModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2394,7 +2202,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2408,17 +2215,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.unitywebrequestwww@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2430,15 +2232,14 @@ m_ResolvedPackages:
   type: module
   description: 'The UnityWebRequestWWW module implements the legacy WWW lets you
     communicate with http services. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.UnityWebRequestWWWModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2473,7 +2274,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2487,17 +2287,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.vehicles@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2509,15 +2304,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Vehicles module implements vehicle physics simulation through
     the WheelCollider component. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VehiclesModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2532,7 +2326,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2546,17 +2339,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.video@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2568,15 +2356,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Video module lets you play back video files in your content.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VideoModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.audio
     version: 1.0.0
@@ -2599,7 +2386,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2613,17 +2399,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.vr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2635,15 +2416,14 @@ m_ResolvedPackages:
   type: module
   description: 'The VR module implements support for virtual reality devices in Unity.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.VRModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2668,7 +2448,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2682,17 +2461,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.wind@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2704,15 +2478,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Wind module implements the WindZone component which can affect
     terrain rendering and particle simulations. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.WindModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -2723,7 +2496,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2737,17 +2509,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.xr@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2759,15 +2526,14 @@ m_ResolvedPackages:
   type: module
   description: 'The XR module contains the VR and AR related platform support functionality.
     Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.XRModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.physics
     version: 1.0.0
@@ -2790,7 +2556,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2804,17 +2569,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.modules.subsystems@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2826,15 +2586,14 @@ m_ResolvedPackages:
   type: module
   description: 'The Subsystem module contains the definitions and runtime support
     for general subsystems in Unity. Scripting API: https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html'
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -2849,7 +2608,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -2863,17 +2621,71 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.render-pipelines.core@14.0.8
+- packageId: com.unity.modules.uielementsnative@1.0.0
   testable: 0
   isDirectDependency: 0
-  version: 14.0.8
+  version: 1.0.0
   source: 2
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.render-pipelines.core@14.0.8
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+  assetPath: Packages/com.unity.modules.uielementsnative
+  name: com.unity.modules.uielementsnative
+  displayName: UIElements Native
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: module
+  description: 
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+- packageId: com.unity.render-pipelines.core@12.1.7
+  testable: 0
+  isDirectDependency: 0
+  version: 12.1.7
+  source: 2
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.render-pipelines.core@12.1.7
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -2890,7 +2702,7 @@ m_ResolvedPackages:
     Render Pipeline (HDRP) and Universal Render Pipeline (URP). If you are creating
     a custom SRP from scratch or customizing a prebuilt SRP, using SRP Core will
     save you time.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -2992,17 +2804,14 @@ m_ResolvedPackages:
     - 10.9.0
     - 10.10.0
     - 10.10.1
-    - 14.0.8
+    - 12.1.7
     compatible:
-    - 14.0.8
-    recommended: 14.0.8
-    deprecated: []
+    - 12.1.7
+    verified: 12.1.7
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.physics
-    version: 1.0.0
-  - name: com.unity.modules.terrain
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
@@ -3015,8 +2824,6 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
-  - name: com.unity.modules.terrain
-    version: 1.0.0
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   keywords: []
@@ -3027,7 +2834,6 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
   datePublishedTicks: 0
@@ -3039,19 +2845,14 @@ m_ResolvedPackages:
     revision: 
     path: 
   unityLifecycle:
-    version: 14.0.8
+    version: 12.1.7
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.searcher@4.9.2
+- packageId: com.unity.searcher@4.9.1
   testable: 0
   isDirectDependency: 0
-  version: 4.9.2
+  version: 4.9.1
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.searcher@4.9.2
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.searcher@4.9.1
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -3063,7 +2864,7 @@ m_ResolvedPackages:
   type: asset
   description: General search window for use in the Editor. First target use is for
     GraphView node search.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3084,9 +2885,9 @@ m_ResolvedPackages:
     - 4.9.1
     - 4.9.2
     compatible:
+    - 4.9.1
     - 4.9.2
-    recommended: 4.9.2
-    deprecated: []
+    verified: 4.9.2
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -3099,31 +2900,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637831252240000000
+  datePublishedTicks: 637695653650000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
-    revision: 7f9f75b04e97cf09c8ddc3968d059e74d6a2460a
+    revision: 9e68a2a9ba29bd6783bc91d15ff82bbd459f2163
     path: 
   unityLifecycle:
-    version: 4.9.2
+    version: 4.9.1
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.ide.visualstudio@2.0.18
+- packageId: com.unity.ide.visualstudio@2.0.15
   testable: 0
   isDirectDependency: 0
-  version: 2.0.18
+  version: 2.0.15
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -3136,7 +2931,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3165,18 +2960,20 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     compatible:
+    - 2.0.15
+    - 2.0.16
+    - 2.0.17
     - 2.0.18
     - 2.0.20
     - 2.0.21
     - 2.0.22
-    recommended: 2.0.22
-    deprecated: []
+    verified: 2.0.22
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.33
+    version: 1.1.31
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -3191,31 +2988,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638173205920000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
+  datePublishedTicks: 637841884840000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: 9d3c07127cbe1916b8abbfd18f71fb8d9df8008c
+    revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
     path: 
   unityLifecycle:
-    version: 2.0.18
+    version: 2.0.15
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.ide.rider@3.0.24
+- packageId: com.unity.ide.rider@3.0.14
   testable: 0
   isDirectDependency: 0
-  version: 3.0.24
+  version: 3.0.14
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.rider@3.0.24
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.rider@3.0.14
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3224,11 +3015,11 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: assets
+  type: asset
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3275,13 +3066,20 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     compatible:
+    - 3.0.14
+    - 3.0.15
+    - 3.0.16
+    - 3.0.17
+    - 3.0.18
+    - 3.0.20
+    - 3.0.21
+    - 3.0.22
     - 3.0.24
     - 3.0.25
     - 3.0.26
     - 3.0.27
     - 3.0.28
-    recommended: 3.0.28
-    deprecated: []
+    verified: 3.0.28
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -3296,31 +3094,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638221653400000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
+  datePublishedTicks: 637861245770000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: f5decc642e3618ce1c6827d47318260e61d64714
+    revision: e6bfc84a08a0876a2c20ec2ee0883b5ece331dfd
     path: 
   unityLifecycle:
-    version: 3.0.24
+    version: 3.0.14
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 0
   version: 1.2.5
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -3333,7 +3125,7 @@ m_ResolvedPackages:
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3352,8 +3144,7 @@ m_ResolvedPackages:
     - 1.2.5
     compatible:
     - 1.2.5
-    recommended: 1.2.5
-    deprecated: []
+    verified: 1.2.5
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3364,8 +3155,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637800255360000000
   documentationUrl: 
@@ -3378,17 +3168,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.5
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.editorcoroutines@1.0.0
   testable: 0
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.editorcoroutines@1.0.0
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3401,7 +3186,7 @@ m_ResolvedPackages:
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3414,8 +3199,7 @@ m_ResolvedPackages:
     - 1.0.0
     compatible:
     - 1.0.0
-    recommended: 1.0.0
-    deprecated: []
+    verified: 1.0.0
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -3429,8 +3213,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637232611380000000
   documentationUrl: 
@@ -3443,17 +3226,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.performance.profile-analyzer@1.2.2
+- packageId: com.unity.performance.profile-analyzer@1.1.1
   testable: 0
   isDirectDependency: 0
-  version: 1.2.2
+  version: 1.1.1
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.performance.profile-analyzer@1.1.1
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3468,7 +3246,7 @@ m_ResolvedPackages:
     in the Profiler.\n\nMain features: \n\u25AA Multi-frame analysis of a single
     set of Profiler CPU data \n\u25AA Comparison of two multi-frame profile scans
     \n\n"
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3487,9 +3265,9 @@ m_ResolvedPackages:
     - 1.1.1
     - 1.2.2
     compatible:
+    - 1.1.1
     - 1.2.2
-    recommended: 1.2.2
-    deprecated: []
+    verified: 1.1.1
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3500,31 +3278,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638108624620000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.performance.profile-analyzer@1.2/manual/index.html
+  datePublishedTicks: 637705021060000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.performance.profile-analyzer.git
-    revision: 2c63f931588caa60a1fef33b1b250b20d952dc58
+    revision: 6dcda6aee96901e98a4f01b85589054b9274ba74
     path: 
   unityLifecycle:
-    version: 1.2.2
+    version: 1.1.1
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.test-framework@1.1.33
+- packageId: com.unity.test-framework@1.1.31
   testable: 0
   isDirectDependency: 0
-  version: 1.1.33
+  version: 1.1.31
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.test-framework@1.1.33
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.test-framework@1.1.31
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3535,7 +3307,7 @@ m_ResolvedPackages:
   category: Unity Test Framework
   type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3591,6 +3363,7 @@ m_ResolvedPackages:
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
+    - 1.1.31
     - 1.1.33
     - 1.3.0
     - 1.3.1
@@ -3609,8 +3382,7 @@ m_ResolvedPackages:
     - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    recommended: 1.1.33
-    deprecated: []
+    verified: 1.1.33
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -3635,31 +3407,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637938212700000000
+  datePublishedTicks: 637804266210000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.test-framework.git
-    revision: 34a4d423d64926635eb36d3bb86276179cc186e1
+    revision: 438b0defc147c9be5c969ca79ff03a722b4590ed
     path: 
   unityLifecycle:
-    version: 1.1.33
+    version: 1.1.31
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.testtools.codecoverage@1.2.4
+- packageId: com.unity.testtools.codecoverage@1.0.1
   testable: 0
   isDirectDependency: 0
-  version: 1.2.4
+  version: 1.0.1
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3673,7 +3439,7 @@ m_ResolvedPackages:
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
     when there are no automated tests in the project.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3709,10 +3475,23 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     compatible:
+    - 1.0.1
+    - 1.1.0
+    - 1.1.1
+    - 1.2.0-exp.1
+    - 1.2.0-exp.2
+    - 1.2.0-exp.3
+    - 1.2.0-exp.4
+    - 1.2.0-exp.5
+    - 1.2.0-exp.6
+    - 1.2.0-exp.7
+    - 1.2.0
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
     - 1.2.4
     - 1.2.5
-    recommended: 1.2.5
-    deprecated: []
+    verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
     version: 1.0.16
@@ -3720,7 +3499,7 @@ m_ResolvedPackages:
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.test-framework
-    version: 1.1.33
+    version: 1.1.31
   - name: com.unity.ext.nunit
     version: 1.0.6
   - name: com.unity.modules.imgui
@@ -3728,7 +3507,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.settings-manager
-    version: 2.0.1
+    version: 1.0.3
   keywords:
   - test
   - coverage
@@ -3741,31 +3520,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638212235100000000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
+  datePublishedTicks: 637594767130000000
+  documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
-    revision: a7dd0751db55cd55e3b336723fb51433c1de7244
+    revision: 2777556fc6ade4006a02ea7febbae1dd3257eb7d
     path: 
   unityLifecycle:
-    version: 1.2.4
+    version: 1.0.1
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.settings-manager@2.0.1
+- packageId: com.unity.settings-manager@1.0.3
   testable: 0
   isDirectDependency: 0
-  version: 2.0.1
+  version: 1.0.3
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.settings-manager@2.0.1
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.settings-manager@1.0.3
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager
@@ -3777,7 +3550,7 @@ m_ResolvedPackages:
   type: asset
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3790,9 +3563,10 @@ m_ResolvedPackages:
     - 2.0.0
     - 2.0.1
     compatible:
+    - 1.0.3
+    - 2.0.0
     - 2.0.1
-    recommended: 2.0.1
-    deprecated: []
+    verified: 1.0.3
   dependencies: []
   resolvedDependencies: []
   keywords: []
@@ -3803,31 +3577,25 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
+  datePublishedTicks: 637300096300000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 473664ccba1496294b741cf169740a5d54b3d0b6
     path: 
   unityLifecycle:
-    version: 2.0.1
+    version: 1.0.3
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
 - packageId: com.unity.ext.nunit@1.0.6
   testable: 0
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -3839,7 +3607,7 @@ m_ResolvedPackages:
   type: asset
   description: Custom version of the nunit package build to work with Unity. Used
     by the Unity Test Framework.
-  status: 0
+  status: 4
   errors: []
   versions:
     all:
@@ -3859,8 +3627,7 @@ m_ResolvedPackages:
     - 2.0.3
     - 2.0.4
     - 2.0.5
-    recommended: 1.0.6
-    deprecated: []
+    verified: 1.0.6
   dependencies: []
   resolvedDependencies: []
   keywords:
@@ -3874,8 +3641,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-    configSource: 0
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637429759280000000
   documentationUrl: 
@@ -3888,8 +3654,3 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.6
     nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 

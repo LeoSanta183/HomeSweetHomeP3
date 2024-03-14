@@ -21,11 +21,18 @@ public class ThirdPersonMovement : MonoBehaviour
     void Start()
     {
         LockCursor();
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            SpearAttack(hitBoxes[0]);
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             cursorLocked = !cursorLocked;
@@ -69,4 +76,32 @@ public class ThirdPersonMovement : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    public Collider[] hitBoxes;
+
+    private void SpearAttack(Collider col)
+    {
+        var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
+        foreach(Collider c in cols)
+        {
+            if(c.transform.root == transform)
+                continue;
+            
+            Debug.Log(c.name);
+
+            float damage = 0;
+            switch(c.name)
+            {
+                case "Body":
+                damage = 1;
+                break;
+
+                default:
+                Debug.Log("Body not found");
+                break;
+            }
+        }
+    }
+
+
 }

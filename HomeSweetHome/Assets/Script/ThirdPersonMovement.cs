@@ -7,20 +7,20 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public CharacterController controller;
     public Transform cam;
+    public float gravity = -9.81f;
+
+    
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
-
-    private bool cursorLocked = true;
-
-    public bool freeze;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        LockCursor();
+        Cursor.lockState = CursorLockMode.Locked;
         controller = GetComponent<CharacterController>();
     }
 
@@ -33,27 +33,11 @@ public class ThirdPersonMovement : MonoBehaviour
             SpearAttack(hitBoxes[0]);
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            cursorLocked = !cursorLocked;
-            if (cursorLocked)
-            {
-                LockCursor();
-            }
-            else
-            {
-                UnlockCursor();
-            }
-        }
-
-        if (!cursorLocked)
-        {
-            return;
-        }
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
 
         if (direction.magnitude >= 0.1f)
         {
@@ -64,17 +48,9 @@ public class ThirdPersonMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-    }
-    private void LockCursor()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+        Vector3 gravityVector = Vector3.up * gravity;
+        controller.Move(gravityVector * Time.deltaTime);
 
-    private void UnlockCursor()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 
     public Collider[] hitBoxes;

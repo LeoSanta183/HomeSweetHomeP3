@@ -59,6 +59,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector3.zero;
         }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            SpearAttack(hitBoxes[0]);
+        }
+
     }
 
     private void FixedUpdate()
@@ -153,6 +159,16 @@ public class PlayerMovement : MonoBehaviour
             + Mathf.Sqrt(2 * (displacementY - trajectoryHeight) / gravity));
 
         return velocityXZ + velocityY;
+    }
+
+    public Collider[] hitBoxes;
+
+    
+    private void SpearAttack(Collider col)
+    {
+        var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
+        foreach(Collider c in cols)
+            Debug.Log(c.name);
     }
 
     private void Jump()

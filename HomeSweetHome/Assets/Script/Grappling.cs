@@ -69,14 +69,7 @@ public class Grappling : MonoBehaviour
 
     private void ExecuteGrapple()
     {
-        Vector3 grappleDirection = (grapplePoint - player.position).normalized;
-        float distanceToGrapplePoint = Vector3.Distance(player.position, grapplePoint);
-
         
-        pm.controller.Move(grappleDirection * distanceToGrapplePoint);
-
-        
-        StopGrapple();
     }
 
     private void StopGrapple()

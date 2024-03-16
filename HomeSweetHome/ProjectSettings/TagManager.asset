@@ -14,8 +14,8 @@ TagManager:
   - HitBox
   - Grappleable
   - 
-  - 
-  - 
+  - whatIsPlayer
+  - whatIsGround
   - 
   - 
   - 

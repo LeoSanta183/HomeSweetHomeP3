@@ -359,6 +359,7 @@
 "Assets/Script/CameraMovement.cs"
 "Assets/Script/Grappling.cs"
 "Assets/Script/Gun.cs"
+"Assets/Script/InstaDeath.cs"
 "Assets/Script/PlayerMovement.cs"
 "Assets/Script/Target.cs"
 "Assets/Script/ThirdPersonCam.cs"

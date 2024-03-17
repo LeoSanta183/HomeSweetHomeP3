@@ -9,8 +9,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform cam;
     public float gravity = -9.81f;
 
+    public LayerMask hitLayer;
     
-
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
@@ -57,24 +57,27 @@ public class ThirdPersonMovement : MonoBehaviour
 
     private void SpearAttack(Collider col)
     {
+      
         var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
+        
         foreach(Collider c in cols)
         {
             if(c.transform.root == transform)
-            continue;
+                continue;
             
+            Debug.Log(c.name);
 
             float damage = 0;
             switch(c.name)
             {
             case "Body":
             damage = 10;
-            Debug.Log(c.name);
             break;
 
             default:
             Debug.Log("Body not found");
             break;
+            
             }
 
             col.GetComponent<Target>().TakeDamage(damage);

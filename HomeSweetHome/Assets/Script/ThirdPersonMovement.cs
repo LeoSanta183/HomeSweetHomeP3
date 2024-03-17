@@ -61,21 +61,24 @@ public class ThirdPersonMovement : MonoBehaviour
         foreach(Collider c in cols)
         {
             if(c.transform.root == transform)
-                continue;
+            continue;
             
-            Debug.Log(c.name);
 
             float damage = 0;
             switch(c.name)
             {
-                case "Body":
-                damage = 1;
-                break;
+            case "Body":
+            damage = 10;
+            Debug.Log(c.name);
+            break;
 
-                default:
-                Debug.Log("Body not found");
-                break;
+            default:
+            Debug.Log("Body not found");
+            break;
             }
+
+            col.GetComponent<Target>().TakeDamage(damage);
+            
         }
     }
 

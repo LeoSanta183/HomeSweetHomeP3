@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -229,7 +229,7 @@ Transform:
   m_GameObject: {fileID: 16902927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.017, z: 0}
-  m_LocalScale: {x: 1, y: 2.012, z: 1.0165}
+  m_LocalScale: {x: 0.8049677, y: 1.6195952, z: 0.8182497}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1124568425}
@@ -243,7 +243,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16902927}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1907,7 +1907,7 @@ GameObject:
   - component: {fileID: 1106542143}
   m_Layer: 6
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1935,7 +1935,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106542141}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 1124568425}
   m_Layer: 6
   m_Name: BoxHitbox
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2034,6 +2034,7 @@ GameObject:
   - component: {fileID: 1134161629}
   - component: {fileID: 1134161630}
   - component: {fileID: 1134161628}
+  - component: {fileID: 1134161631}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -2125,6 +2126,21 @@ MonoBehaviour:
   activeGrapple: 0
   hitBoxes:
   - {fileID: 623044656}
+--- !u!114 &1134161631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134161624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a521dc0265aba4f9df2eab040ab88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  currentHealth: 0
+  hitBoxes: []
 --- !u!1 &1139865696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,7 +2217,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2466,6 +2482,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  currentHealth: 0
+  hitBoxes:
+  - {fileID: 1106542143}
 --- !u!1 &1168600074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,7 +3364,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978705243}
-  m_LocalRotation: {x: 0.030191537, y: 0.107633606, z: -0.0032701388, w: 0.99372673}
+  m_LocalRotation: {x: 0.030191537, y: 0.10763357, z: -0.003270138, w: 0.99372673}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

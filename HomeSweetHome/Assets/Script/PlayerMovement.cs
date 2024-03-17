@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Q))
         {
             SpearAttack(hitBoxes[0]);
         }
@@ -169,6 +169,7 @@ public class PlayerMovement : MonoBehaviour
         var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
         foreach(Collider c in cols)
             Debug.Log(c.name);
+        
     }
 
     private void Jump()

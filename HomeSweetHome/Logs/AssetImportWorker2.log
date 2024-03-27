@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 32674 MB
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 32682 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2021.3.5f1\Editor\Unity.exe
+E:\UNITY ONLY\Install Stuff\Unity 2021.3.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/Fishs/Downloads/HomeSweetHomeP3/HomeSweetHome
+E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-51084
-Successfully changed project path to: C:/Users/Fishs/Downloads/HomeSweetHomeP3/HomeSweetHome
-C:/Users/Fishs/Downloads/HomeSweetHomeP3/HomeSweetHome
+50334
+Successfully changed project path to: E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome
+E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,112 @@ C:/Users/Fishs/Downloads/HomeSweetHomeP3/HomeSweetHome
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 202.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Fishs/Downloads/HomeSweetHomeP3/HomeSweetHome/Assets
+[Subsystems] Discovering subsystems at path E:/UNITY ONLY/Install Stuff/Unity 2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UNITY ONLY/Repo/HomeSweetHomeP3/HomeSweetHome/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
     Vendor:   NVIDIA
-    VRAM:     8018 MB
+    VRAM:     12115 MB
     Driver:   31.0.15.5152
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Mono path[0] = 'E:/UNITY ONLY/Install Stuff/Unity 2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'E:/UNITY ONLY/Install Stuff/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/UNITY ONLY/Install Stuff/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.108841 seconds.
+Register platform support module: E:/UNITY ONLY/Install Stuff/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001582 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.93 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.164 seconds
+- Completed reload, in  0.428 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5164ms)
-		BeginReloadAssembly (3799ms)
+	ReloadAssembly (428ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (882ms)
-			LoadAssemblies (3791ms)
+		EndReloadAssembly (302ms)
+			LoadAssemblies (60ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (518ms)
+			SetupTypeCache (64ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (277ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (189ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
+				RefreshPlugins (59ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (136ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 1.311148 seconds.
+Registered in 0.003495 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Fishs\Downloads\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Fishs\Downloads\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\UNITY ONLY\Repo\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.347 seconds
+- Completed reload, in  0.819 seconds
 Domain Reload Profiling:
-	ReloadAssembly (5348ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (820ms)
+		BeginReloadAssembly (83ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (4990ms)
-			LoadAssemblies (3456ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (664ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (780ms)
+			SetupTypeCache (172ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (691ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (372ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (388ms)
-				ProcessInitializeOnLoadMethodAttributes (56ms)
-				AfterProcessingInitializeOnLoad (25ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4198 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (413.4 KB). Loaded Objects now: 4658.
-Memory consumption went from 148.8 MB to 148.4 MB.
-Total: 3.109600 ms (FindLiveObjects: 0.223900 ms CreateObjectMapping: 0.133200 ms MarkObjects: 2.650000 ms  DeleteObjects: 0.101700 ms)
+Unloading 37 unused Assets / (414.1 KB). Loaded Objects now: 4658.
+Memory consumption went from 148.9 MB to 148.4 MB.
+Total: 3.288700 ms (FindLiveObjects: 0.283200 ms CreateObjectMapping: 0.214200 ms MarkObjects: 2.668600 ms  DeleteObjects: 0.121800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -159,67 +160,151 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 697.825411 seconds.
-  path: Assets/Textures/Coin/CoinBase.png
-  artifactKey: Guid(9d8a3058a3e5e9a438b5aa8149985857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Coin/CoinBase.png using Guid(9d8a3058a3e5e9a438b5aa8149985857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7bda4deae7967cca7439b14405312d') in 0.089582 seconds 
+  Time since last request: 1201.140001 seconds.
+  path: Assets/Prefabs/LollipopGrapple.prefab
+  artifactKey: Guid(7945978cef0a722499ef33b9face5162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple.prefab using Guid(7945978cef0a722499ef33b9face5162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff98be1f8a02fc304a86f69a7eccd213') in 0.098587 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.019098 seconds.
-  path: Assets/Textures/Coin/CoinNorm.png
-  artifactKey: Guid(db6877cf85444fc49987cba83f33189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Coin/CoinNorm.png using Guid(db6877cf85444fc49987cba83f33189a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c82b0120418584e3306fea5df211a9f') in 0.036933 seconds 
+  Time since last request: 33.947523 seconds.
+  path: Assets/Prefabs/LollipopGrapple.prefab
+  artifactKey: Guid(7945978cef0a722499ef33b9face5162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple.prefab using Guid(7945978cef0a722499ef33b9face5162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ec73cb906cff40b99c3c98b3e45f7f') in 0.017559 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 55.756733 seconds.
-  path: Assets/Assets/CandyCane1.fbx
-  artifactKey: Guid(3a9f500e1c4d3104dab7ceadb8d78b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/CandyCane1.fbx using Guid(3a9f500e1c4d3104dab7ceadb8d78b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b607cf39b7cd16de4cbdb045c7a9690') in 0.111742 seconds 
+  Time since last request: 79.380103 seconds.
+  path: Assets/Prefabs/LollipopTree Variant.prefab
+  artifactKey: Guid(782e4847aaaa99a4cbf8b383e140f9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree Variant.prefab using Guid(782e4847aaaa99a4cbf8b383e140f9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8490fafae77b5434c6045a17369328a1') in 0.038415 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
+  Time since last request: 84.932985 seconds.
+  path: Assets/Prefabs/LollipopTree.prefab
+  artifactKey: Guid(8489f5c0a9048ec4780bc32f26d63ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree.prefab using Guid(8489f5c0a9048ec4780bc32f26d63ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775f517bb74433614b6aa8648a346886') in 0.018842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.281769 seconds.
+  path: Assets/Prefabs/LollipopTree3.prefab
+  artifactKey: Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree3.prefab using Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f94ea9ab3b7b3975a3413f8b6546cf62') in 0.048696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 139.584447 seconds.
+  path: Assets/Prefabs/LollipopTree.prefab
+  artifactKey: Guid(8489f5c0a9048ec4780bc32f26d63ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree.prefab using Guid(8489f5c0a9048ec4780bc32f26d63ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038fbc7f95aaddc29b9aacb8a1b4d337') in 0.016993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.465978 seconds.
+  path: Assets/Prefabs/LollipopTree 1.prefab
+  artifactKey: Guid(8071ec366e078bd42aa0c9f94d119a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree 1.prefab using Guid(8071ec366e078bd42aa0c9f94d119a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e960101bb82829cb3d56b3fc91f5aaaf') in 0.017123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 223.391996 seconds.
+  path: Assets/Prefabs/LollipopTree3.prefab
+  artifactKey: Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree3.prefab using Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33f6f95913c0cd12c592fbcde443be4') in 0.023897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 416.304523 seconds.
+  path: Assets/Prefabs/LollipopTree3.prefab
+  artifactKey: Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree3.prefab using Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05db54cc539f87f0197a69ab61df2712') in 0.020328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.627880 seconds.
+  path: Assets/Assets/LollipopTree3 1.fbx
+  artifactKey: Guid(d3c80c7f1eb9b6946b05d56fe3d851d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopTree3 1.fbx using Guid(d3c80c7f1eb9b6946b05d56fe3d851d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349fc93e6da8d69241f17dd88f9cb2ec') in 0.035859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.545838 seconds.
+  path: Assets/Prefabs/LollipopTree3 Variant.prefab
+  artifactKey: Guid(6c1646f58ba79d44384b47d334df7d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree3 Variant.prefab using Guid(6c1646f58ba79d44384b47d334df7d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb675f289568525961b1cbc18f43e2a7') in 0.032538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.592493 seconds.
+  path: Assets/Prefabs/LollipopTree3.prefab
+  artifactKey: Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopTree3.prefab using Guid(173f9a2ef726f6d45ba427ada8633dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2621eab7701094ecde591784eb475a03') in 0.019479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.148446 seconds.
+  path: Assets/Materials/MI_Coin.mat
+  artifactKey: Guid(ed18e173921376347b1c664419d7ee47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MI_Coin.mat using Guid(ed18e173921376347b1c664419d7ee47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04bf9b59f26fabaf1042349415cdd7d') in 0.105400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.291932 seconds.
+  path: Assets/Assets/LollipopTree3 1.fbx
+  artifactKey: Guid(825106b944979484cada8267b8297ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopTree3 1.fbx using Guid(825106b944979484cada8267b8297ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dfe9f6862046a2da6ceb77cef557f99') in 0.024935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.381153 seconds.
+  path: Assets/Assets/LollipopGrapple.fbx
+  artifactKey: Guid(825106b944979484cada8267b8297ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopGrapple.fbx using Guid(825106b944979484cada8267b8297ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a31bb7a4b4bf1e9bc8d632ce54b9aa') in 0.019452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 197.947928 seconds.
+  path: Assets/Materials/MI_Lollipop3 1.mat
+  artifactKey: Guid(b45d8c942ce066a4597a7ffb4e2a486f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MI_Lollipop3 1.mat using Guid(b45d8c942ce066a4597a7ffb4e2a486f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbed1ad9e5fef88ecdba19694f201ff') in 0.019729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.839392 seconds.
+  path: Assets/Materials/MI_LollipopGrapple.mat
+  artifactKey: Guid(b45d8c942ce066a4597a7ffb4e2a486f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MI_LollipopGrapple.mat using Guid(b45d8c942ce066a4597a7ffb4e2a486f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '385e9dcb1024f83ea42e9d498867b52e') in 0.017077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 158.997941 seconds.
+  path: Assets/Prefabs/LollipopGrapple Variant.prefab
+  artifactKey: Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple Variant.prefab using Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fb3d3aa3f50973d67f7471a013312b') in 0.017658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.157028 seconds.
+  path: Assets/Prefabs/LollipopGrapple Variant.prefab
+  artifactKey: Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple Variant.prefab using Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c44e5867e1581a87ae3d71ee4531537') in 0.023751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.142957 seconds.
+  path: Assets/Prefabs/LollipopGrapple Variant.prefab
+  artifactKey: Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple Variant.prefab using Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda971b745df766bf4ec49aeb135c2fc') in 0.017142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.428125 seconds.
+  path: Assets/Prefabs/LollipopGrapple.prefab
+  artifactKey: Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LollipopGrapple.prefab using Guid(bc764e8b448c1f846810de3c03c5f519) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba09c3f9db2d9aaaf2890e32fcd92a4') in 0.023849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 585.843878 seconds.
+  path: Assets/Scenes/Testing Scenes
+  artifactKey: Guid(53954e23f5b1e2244849537f9f6301c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Testing Scenes using Guid(53954e23f5b1e2244849537f9f6301c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3cadfd4906abeebf55461340404105d') in 0.005661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.358719 seconds.
+  path: Assets/Scenes/ArtTest.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ArtTest.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ccc3abc26450ece2414db4b9f0d01a8') in 0.005690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.422434 seconds.
+  path: Assets/Scenes/Testing Scenes/TechTest.unity
+  artifactKey: Guid(0973beb83df5ac44486115d789e4b087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Testing Scenes/TechTest.unity using Guid(0973beb83df5ac44486115d789e4b087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a66c1c2977c8e122106931aa11d0f0') in 0.006013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3130.600977 seconds.
   path: Assets/Assets/LollipopTree3.fbx
   artifactKey: Guid(6ad03500e72765a438fac67bccae7255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/LollipopTree3.fbx using Guid(6ad03500e72765a438fac67bccae7255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39623e993e6ad70a3a6064adcf97245') in 0.033704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Assets/WrappedCandy1.fbx
-  artifactKey: Guid(a881a0d79376f784591a614606dc4abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/WrappedCandy1.fbx using Guid(a881a0d79376f784591a614606dc4abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8c957f81c58097df1b4520b4d30650') in 0.030550 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Assets/mc.fbx
-  artifactKey: Guid(093510d8d26661648811fd9afbc9f898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/mc.fbx using Guid(093510d8d26661648811fd9afbc9f898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '028c247d573e25362b66cf0756407fc9') in 0.129525 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Assets/Tower1.fbx
-  artifactKey: Guid(c3359f78d0f415a4281cd5ae6bc254fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Tower1.fbx using Guid(c3359f78d0f415a4281cd5ae6bc254fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8def7fbf35fc5a65c24de71a8b496e') in 0.027692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Assets/Wall2.fbx
-  artifactKey: Guid(d364744c109ba0e4b970923ae3083753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Wall2.fbx using Guid(d364744c109ba0e4b970923ae3083753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5371733a2e32e836e25680c4c83b37c3') in 0.029841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Assets/LollipopTree1.fbx
-  artifactKey: Guid(28eac96d1bf8f384f9c6040a5864027d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/LollipopTree1.fbx using Guid(28eac96d1bf8f384f9c6040a5864027d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92bfcb0b0050d5d712aec2c1045ad8c') in 0.029935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Assets/LollipopTree2.fbx
-  artifactKey: Guid(79356367954913a46bb2e42d82423b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/LollipopTree2.fbx using Guid(79356367954913a46bb2e42d82423b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2573271d36a9520aa7516b7ffacda402') in 0.031382 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Assets/Wall1.fbx
-  artifactKey: Guid(409c1b038b3c2c245b7ecfe634853983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Wall1.fbx using Guid(409c1b038b3c2c245b7ecfe634853983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f7d3457ffeb645788d5d5be313d4d0') in 0.029510 seconds 
+Start importing Assets/Assets/LollipopTree3.fbx using Guid(6ad03500e72765a438fac67bccae7255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509d646b7338a0779a0fff1c0d613a1c') in 0.020813 seconds 

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Kingdom.unity
+- path: Assets/Scenes/Testing Scenes/GameplayTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

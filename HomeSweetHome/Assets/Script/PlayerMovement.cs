@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalInput;
     float veritcalInput;
+    private Vector2 moveInputValue;
 
     Vector3 moveDirection;
 
@@ -72,10 +74,16 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
+    private void OnMove(InputValue value)
+    {
+        moveInputValue = value.Get<Vector2>();
+        Debug.Log(moveInputValue);
+    }
     private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         veritcalInput = Input.GetAxisRaw("Vertical");
+        
 
         //when to jump
         if(Input.GetKey(jumpKey) && readyToJump && grounded)

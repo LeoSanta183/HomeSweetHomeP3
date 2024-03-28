@@ -1,0 +1,74 @@
+{
+    "name": "Input system",
+    "maps": [
+        {
+            "name": "PlayerOnGround",
+            "id": "6e24b4f4-34b9-4555-9db9-37cd642f693d",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "228b3d64-ec35-488e-afeb-1332ce47e8b8",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Look around",
+                    "type": "Value",
+                    "id": "9070c432-0796-4b86-81cc-ba9583671aa3",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Value",
+                    "id": "8b85dd47-542c-447d-96c0-b3f06b8f02f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "13a167e3-9d89-4b84-8992-804540807596",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40771658-7d07-4bb4-953f-4729d12f1865",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look around",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eb950a75-008e-4938-b25b-e6efcd2f1d82",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

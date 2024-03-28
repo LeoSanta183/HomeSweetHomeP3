@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ThirdPersonCam : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class ThirdPersonCam : MonoBehaviour
     public Transform player;
     public Transform playerObj;
     public Rigidbody rb;
-
+    private Vector2 lookInputValue;
     public float rotationSpeed;
 
     public Transform combatLookAt;
@@ -53,5 +54,10 @@ public class ThirdPersonCam : MonoBehaviour
 
             playerObj.forward = dirToCombatLookAt.normalized;
         }
+    }
+     private void OnLookaround(InputValue value)
+    {
+        lookInputValue = value.Get<Vector2>();
+        Debug.Log(lookInputValue);
     }
 }

@@ -1,34 +1,117 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Gun : MonoBehaviour
 {
 
-    public Transform bulletSpawnPoint;
-    public GameObject bulletPrefab;
-    public float bulletSpeed = 30f;
+    //Gun stats
+    public int damage;
+    public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
+    public int magazineSize, bulletsPerTap;
+    public bool allowButtonHold;
+    int bulletsLeft, bulletsShot;
 
-    public float damage = 10f; 
-    public float range = 100f;
+    //bools
+    bool shooting, readyToShoot, reloading;
 
+    // Reference
     public Camera fpsCam;
+    public Transform attackPoint;
+    public RaycastHit rayHit;
+    public LayerMask whatIsEnemy;
 
-    // Update is called once per frame
-    void Update()
+    //Graphics
+    public GameObject muzzleFlash, bulletHoleGraphic;
+    public CameraShake camShake;
+    public float camShakeMagnitude, camShakeDuration;
+    public TextMeshProUGUI text;
+
+    private void Awake()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
+        bulletsLeft = magazineSize;
+        readyToShoot = true;
+    }
+
+private void Update()
+{
+    MyInput();
+
+    //SetText
+    text.SetText(bulletsLeft + " / " + magazineSize);
+}
+
+private void MyInput()
+{
+    if(allowButtonHold) shooting = Input.GetButton("Fire1");
+    else shooting = Input.GetButtonDown("Fire1");
+
+    if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading) Reload();
+    
+    //Shoot
+    if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+    {
+        bulletsShot = bulletsPerTap;
+        Shoot();
+    }
+}
+ 
+    private void OnShoot()
+    {
+        Debug.Log("shootValue");
+        Shoot();
     }
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        readyToShoot = false;
 
-        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
-        if (bulletRigidbody != null)
+        //Spread
+        float x = Random.Range(-spread, spread);
+        float y = Random.Range(-spread, spread);
+
+        //Calculate Direction with Spread
+        Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
+
+        //RayCast
+        if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range, whatIsEnemy))
         {
-            bulletRigidbody.velocity = bulletSpawnPoint.forward * bulletSpeed;
+            Debug.Log(rayHit.collider.name);
+
         }
+
+        //ShakeCamera
+        
+
+        //Graphics
+        Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
+        Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        bulletsLeft--;
+        bulletsShot--;
+
+        Invoke("ResetShot", timeBetweenShooting);
+
+        if(bulletsShot > 0 && bulletsLeft > 0)
+        {
+            Invoke("Shoot", timeBetweenShots);
+        }
+    }
+
+    private void ResetShot()
+    {
+        readyToShoot = true;
+    }
+
+    private void Reload()
+    {
+        reloading = true;
+        Invoke("ReloadFinished", reloadTime);
+    }
+
+    private void ReloadFinished()
+    {
+        bulletsLeft = magazineSize;
+        reloading = false;
     }
 }

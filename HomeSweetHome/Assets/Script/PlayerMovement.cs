@@ -37,10 +37,14 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    Target targetScript;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+         targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+
     }
 
     private void Update()
@@ -176,7 +180,26 @@ public class PlayerMovement : MonoBehaviour
     {
         var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
         foreach(Collider c in cols)
-            Debug.Log(c.name);
+        {
+            if(c.transform.root == transform)
+                continue;
+            
+
+            float damage = 0;
+            switch(c.name)
+            {
+            case "Body":
+            damage = 10;
+            break;
+
+            default:
+            Debug.Log("Body not found");
+            break;
+            }
+
+            targetScript.TakeDamage(damage);
+            
+        }
         
     }
 

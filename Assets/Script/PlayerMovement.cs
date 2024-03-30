@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if(Input.GetButton("Fire1"))
         {
             SpearAttack(hitBoxes[0]);
         }

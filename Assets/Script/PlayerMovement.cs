@@ -203,6 +203,11 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    public void Lose()
+    {
+        
+    }
+
     private void Jump()
     {
         //reset y velocity

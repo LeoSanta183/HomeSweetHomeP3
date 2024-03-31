@@ -27,11 +27,14 @@ public class Gun : MonoBehaviour
     public CameraShake camShake;
     public float camShakeMagnitude, camShakeDuration;
     public TextMeshProUGUI text;
+    Target targetScript;
 
     private void Awake()
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+
     }
 
 private void Update()
@@ -78,6 +81,7 @@ private void MyInput()
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range, whatIsEnemy))
         {
             Debug.Log(rayHit.collider.name);
+            targetScript.TakeDamage(damage);
 
         }
 

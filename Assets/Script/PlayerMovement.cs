@@ -185,7 +185,7 @@ public class PlayerMovement : MonoBehaviour
                 continue;
             
 
-            float damage = 0;
+            int damage = 0;
             switch(c.name)
             {
             case "Body":

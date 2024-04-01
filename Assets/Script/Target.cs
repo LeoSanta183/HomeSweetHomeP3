@@ -1,18 +1,19 @@
 using UnityEngine;
+using TMPro;
 
 public class Target : MonoBehaviour
 {
     public float health = 50f;
     public float currentHealth;
     public Collider[] hitBoxes;
-
+    public TextMeshProUGUI text;
     PlayerMovement playerScript;
     void Start()
     
     {
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-
         currentHealth = health;
+        
     }
     public void TakeDamage (float amount)
     {

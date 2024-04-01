@@ -18,12 +18,14 @@ public class CarrotAI : MonoBehaviour
     [SerializeField] float sightRange, attackRange;
     bool playerInSight, playerInAttack, isStunned;
 
-
+    PlayerHealth pHealthScript;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
+        pHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+
     }
 
     // Update is called once per frame

@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject ControlButton;
     public GameObject ControlScreen;
     public GameObject OptionsPanel;
+    public GameObject crosshair;
     public static bool GameIsPaused = false;
     public static bool ControlsIsOn = false;
     public static bool OptionsIsOn = false;
@@ -52,6 +53,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         ControlsIsOn = false;
         OptionsIsOn = false;
+        crosshair.SetActive(false);
         PauseButton.SetActive(false);
         ControlButton.SetActive(false);
         ControlScreen.SetActive(false);
@@ -67,6 +69,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         GameIsPaused = false;
         PauseButton.SetActive(true);
+        crosshair.SetActive(true);
         ControlButton.SetActive(true);
         audioManager.PlaySFX(audioManager.buttonHover);
         Cursor.lockState = CursorLockMode.Locked;

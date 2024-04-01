@@ -15,7 +15,7 @@ H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHo
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61547
+61669
 Successfully changed project path to: H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHomeP3/HomeSweetHome
 H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHomeP3/HomeSweetHome
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ H:/Work/School/UCF/SPRING2024/DIG4715 - Game Production/FinalProject/HomeSweetHo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 71.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 65.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path H:/Program Files/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,113 +63,113 @@ Initialize mono
 Mono path[0] = 'H:/Program Files/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'H:/Program Files/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'H:/Program Files/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: H:/Program Files/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002388 seconds.
+Registered in 0.002121 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 62.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 61.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.513 seconds
+- Completed reload, in  0.478 seconds
 Domain Reload Profiling:
-	ReloadAssembly (513ms)
-		BeginReloadAssembly (74ms)
+	ReloadAssembly (479ms)
+		BeginReloadAssembly (65ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (359ms)
-			LoadAssemblies (74ms)
+		EndReloadAssembly (337ms)
+			LoadAssemblies (65ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (77ms)
+			SetupTypeCache (72ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (224ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (210ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
+				RefreshPlugins (61ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (112ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006603 seconds.
+Registered in 0.004369 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-00000182C69EB030 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file data-00000217430AC3F0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C7F9E830 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-00000217430AC3F0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C76F2050 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000021743DB7820 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C76F2050 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-00000217430AC3F0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6A0BE40 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002173EDE4E30 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C80E5010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file data-00000217424A8010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C2FD7010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-00000217424A8010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C8143E20 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-00000217425D1C40 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6B3F4C0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file data-000002173EE016D0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C2CCD3F0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file data-00000217440604E0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C74AD020 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000021742935E50 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6A94520 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000021742944EB0 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C74AD020 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000021744088100 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C7104C40 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000002173E883010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6C67010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file data-000002173E883010 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6AD5B10 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file data-0000021744088100 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C6CDB080 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002173EA69A50 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C710CC50 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000021743399080 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-00000182C7124860 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file data-000002174293C960 doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image H:\Work\School\UCF\SPRING2024\DIG4715 - Game Production\FinalProject\HomeSweetHomeP3\HomeSweetHome\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 64.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 62.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.959 seconds
+- Completed reload, in  0.893 seconds
 Domain Reload Profiling:
-	ReloadAssembly (960ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (894ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (769ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (714ms)
+			LoadAssemblies (75ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
+			SetupTypeCache (185ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (412ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (398ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (64ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (217ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -177,13 +177,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4014 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 24 unused Assets / (342.6 KB). Loaded Objects now: 4474.
 Memory consumption went from 141.9 MB to 141.5 MB.
-Total: 2.852500 ms (FindLiveObjects: 0.248900 ms CreateObjectMapping: 0.183200 ms MarkObjects: 2.323200 ms  DeleteObjects: 0.096500 ms)
+Total: 2.654200 ms (FindLiveObjects: 0.274400 ms CreateObjectMapping: 0.093300 ms MarkObjects: 2.197800 ms  DeleteObjects: 0.087700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -197,13 +197,97 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 515459.748900 seconds.
-  path: Assets/Textures/SodaBottle/M_SodaBottle1_orm.png
-  artifactKey: Guid(a8d6434ab75618340b4515211c352e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/SodaBottle/M_SodaBottle1_orm.png using Guid(a8d6434ab75618340b4515211c352e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289b749a37db392b54d9e0465869f60e') in 0.097161 seconds 
+  Time since last request: 515615.018693 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(4f3267ffa0f3f2f40a7af4c29d03506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(4f3267ffa0f3f2f40a7af4c29d03506f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1ef16248d9cb388d1411fff6de27bb') in 0.010705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.542678 seconds.
+  path: Assets/Materials/MI_ChocolateCoin.mat
+  artifactKey: Guid(a726ce405f30bad418fb34b5b33e9888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MI_ChocolateCoin.mat using Guid(a726ce405f30bad418fb34b5b33e9888) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a984b7120c4d12f61e2d9343b6e493e4') in 0.184227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/MI_LollipopTree2.mat
+  artifactKey: Guid(6eee81abbccb6a1488ab56f28935655b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MI_LollipopTree2.mat using Guid(6eee81abbccb6a1488ab56f28935655b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cb5457ac650f16590f7d9ebcd0b30a') in 0.464854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.880635 seconds.
+  path: Assets/Assets/CandyCane2.fbx
+  artifactKey: Guid(a3ee03a1beb86b249aa2865ea205f6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/CandyCane2.fbx using Guid(a3ee03a1beb86b249aa2865ea205f6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633d2fb28e9b26eb5507af3c3e898118') in 0.105176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/LollipopTarget1.fbx
+  artifactKey: Guid(fd449ffada39ca649b2a73fcac7b0487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopTarget1.fbx using Guid(fd449ffada39ca649b2a73fcac7b0487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e8370dd7e084486af7bb0084410251') in 0.021442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/LollipopTree3.fbx
+  artifactKey: Guid(6ad03500e72765a438fac67bccae7255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopTree3.fbx using Guid(6ad03500e72765a438fac67bccae7255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ef4ea6a241bb5ac8d7a2149108ee63') in 0.023378 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Textures/SodaBottle/M_SodaBottle1_bc.png
-  artifactKey: Guid(020473c3468136645a692cd55b868d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/SodaBottle/M_SodaBottle1_bc.png using Guid(020473c3468136645a692cd55b868d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea1ebed33470eac419b0b61fd6357e7') in 0.012855 seconds 
+  path: Assets/Assets/WrappedCandy1.fbx
+  artifactKey: Guid(a881a0d79376f784591a614606dc4abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/WrappedCandy1.fbx using Guid(a881a0d79376f784591a614606dc4abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3277637a5e75d78678e74ef2f92c418') in 0.022906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/SignToBattlefield.fbx
+  artifactKey: Guid(4f3c0c683db8b1e4b973faa7fede8a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/SignToBattlefield.fbx using Guid(4f3c0c683db8b1e4b973faa7fede8a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b6c728621ff3becbba47af0a562928') in 0.018617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Fence1.fbx
+  artifactKey: Guid(789a35e180666d248bc4b4858f7f0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Fence1.fbx using Guid(789a35e180666d248bc4b4858f7f0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a07fcea54487709b7545d6ffec46e3') in 0.020066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/SignToCandyCastle.fbx
+  artifactKey: Guid(77f1da0604d73d44e8f68c9215d09781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/SignToCandyCastle.fbx using Guid(77f1da0604d73d44e8f68c9215d09781) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc47d0e48adf12a26af66582ebd593fb') in 0.020978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/FencePost1.fbx
+  artifactKey: Guid(671bb8e1d73fc454285d85b236c14d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/FencePost1.fbx using Guid(671bb8e1d73fc454285d85b236c14d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd802bbf57a2dbdb4527d50d6381c6ae4') in 0.020911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/LollipopTree2.fbx
+  artifactKey: Guid(79356367954913a46bb2e42d82423b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/LollipopTree2.fbx using Guid(79356367954913a46bb2e42d82423b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c878ce8954a476947a0b48ec0e4c098a') in 0.021261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/SignToLollipopForest.fbx
+  artifactKey: Guid(d883fd7a186492843968e86d4a763c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/SignToLollipopForest.fbx using Guid(d883fd7a186492843968e86d4a763c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e88c36ccd47b54e8ac8c83fbf2cb71') in 0.021311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/GingerbreadBarrack.fbx
+  artifactKey: Guid(dbb385b7f94e6f549a2e3a882eea5bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/GingerbreadBarrack.fbx using Guid(dbb385b7f94e6f549a2e3a882eea5bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17dcf265763baf87e5eb4604879bab14') in 0.020774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/ChocolateCoin.fbx
+  artifactKey: Guid(eeb76c9634c32e84f99baf8c92d13d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/ChocolateCoin.fbx using Guid(eeb76c9634c32e84f99baf8c92d13d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648c87198809bd95882dd9d2cf86d720') in 0.027394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/SignToTraining.fbx
+  artifactKey: Guid(12f5ff38b34aae44f86665c048052c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/SignToTraining.fbx using Guid(12f5ff38b34aae44f86665c048052c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07973de34e1b70d9bc0572737adb58cd') in 0.019973 seconds 

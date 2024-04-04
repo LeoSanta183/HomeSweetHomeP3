@@ -6,7 +6,6 @@ public class Target : MonoBehaviour
     public float health = 50f;
     public float currentHealth;
     public Collider[] hitBoxes;
-    public TextMeshProUGUI text;
     PlayerMovement playerScript;
     
     AudioManager audioManager;

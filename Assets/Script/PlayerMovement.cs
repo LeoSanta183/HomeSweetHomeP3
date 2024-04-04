@@ -40,10 +40,13 @@ public class PlayerMovement : MonoBehaviour
     Target targetScript;
 
     AudioManager audioManager;
+
+    public Animator animate;
     
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        animate = GetComponent<Animator>();
     }
 
     private void Start()
@@ -51,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
          targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
-
     }
 
     private void Update()
@@ -61,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         MyInput();
         SpeedControl();
+
 
         //handle drag
         if (grounded && !activeGrapple)
@@ -78,6 +81,8 @@ public class PlayerMovement : MonoBehaviour
             SpearAttack(hitBoxes[0]);
         }
 
+        animate.SetFloat("MovementSpeed", Mathf.Abs(moveSpeed));
+
     }
 
     private void FixedUpdate()
@@ -94,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         veritcalInput = Input.GetAxisRaw("Vertical");
+
         
 
         //when to jump
@@ -116,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
         //on ground
         if(grounded)
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-        
+
         //in air
         else if (!grounded)
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);

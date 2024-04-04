@@ -39,6 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
     Target targetScript;
 
+    AudioManager audioManager;
+    
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -113,6 +120,7 @@ public class PlayerMovement : MonoBehaviour
         //in air
         else if (!grounded)
         rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        
     }
     private Vector3 velocityToSet;
     private void SetVelocity()

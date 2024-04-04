@@ -8,6 +8,14 @@ public class Target : MonoBehaviour
     public Collider[] hitBoxes;
     public TextMeshProUGUI text;
     PlayerMovement playerScript;
+    
+    AudioManager audioManager;
+    
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+    
     void Start()
     
     {
@@ -20,6 +28,7 @@ public class Target : MonoBehaviour
         currentHealth -= amount;
         if(currentHealth <= 0f && gameObject.CompareTag("Enemy"))
         {
+            audioManager.PlaySFX(audioManager.EnemyHit);
             Die();
         }
         if(currentHealth <= 0f && gameObject.CompareTag("Player"))

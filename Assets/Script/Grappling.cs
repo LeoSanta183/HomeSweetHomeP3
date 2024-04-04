@@ -23,7 +23,11 @@ public class Grappling : MonoBehaviour
 
     public bool grappling;
 
-
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +72,7 @@ public class Grappling : MonoBehaviour
 
         lr.enabled = true;
         lr.SetPosition(1, grapplePoint);
+        audioManager.PlaySFX(audioManager.Grapple);
     }
 
     private void ExecuteGrapple()
@@ -84,7 +89,6 @@ public class Grappling : MonoBehaviour
         pm.JumpToPosition(grapplePoint, highestPointOnArc);
 
         Invoke(nameof(StopGrapple), 1f);
-
     }
 
     public void StopGrapple()

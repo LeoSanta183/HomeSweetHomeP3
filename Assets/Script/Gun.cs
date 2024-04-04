@@ -27,13 +27,17 @@ public class Gun : MonoBehaviour
     public CameraShake camShake;
     public float camShakeMagnitude, camShakeDuration;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI MiniText;
     Target targetScript;
+
+    AudioManager audioManager;
 
     private void Awake()
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
         targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
@@ -43,6 +47,7 @@ private void Update()
 
     //SetText
     text.SetText(bulletsLeft + " / " + magazineSize);
+    MiniText.text = magazineSize.ToString();
 }
 
 private void MyInput()
@@ -100,6 +105,8 @@ private void MyInput()
         {
             Invoke("Shoot", timeBetweenShots);
         }
+
+        audioManager.PlaySFX(audioManager.Bullet);
     }
 
     private void ResetShot()

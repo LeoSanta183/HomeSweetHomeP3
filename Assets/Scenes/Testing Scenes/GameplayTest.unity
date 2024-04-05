@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a8ea563aad0c1654d92da697912c891e, type: 2}
     - target: {fileID: 919132149155446097, guid: 4473efca453243f439c73e147bcfe5e1, type: 3}
       propertyPath: m_Name
-      value: pep_comb
+      value: PlayerObj
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4473efca453243f439c73e147bcfe5e1, type: 3}
@@ -667,6 +667,7 @@ MonoBehaviour:
   camShakeMagnitude: 0.1
   camShakeDuration: 0.1
   text: {fileID: 679362067}
+  MiniText: {fileID: 0}
 --- !u!65 &128795885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2411,6 +2412,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
+  GunUI: {fileID: 0}
+  MiniGunUI: {fileID: 0}
+  MeleeUI: {fileID: 0}
+  MiniMeleeUI: {fileID: 0}
 --- !u!1 &478913137
 GameObject:
   m_ObjectHideFlags: 0
@@ -5181,6 +5186,7 @@ MonoBehaviour:
   orientation: {fileID: 964176853}
   freeze: 0
   activeGrapple: 0
+  animate: {fileID: 0}
   hitBoxes:
   - {fileID: 623044656}
 --- !u!114 &1134161631
@@ -5198,7 +5204,6 @@ MonoBehaviour:
   health: 10
   currentHealth: 10
   hitBoxes: []
-  text: {fileID: 0}
 --- !u!1 &1139865696
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,7 +5583,6 @@ MonoBehaviour:
   currentHealth: 10
   hitBoxes:
   - {fileID: 269128916}
-  text: {fileID: 0}
 --- !u!65 &1164670826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6401,6 +6405,7 @@ MonoBehaviour:
   MeleeSlash: {fileID: 0}
   Footsteps: {fileID: 0}
   buttonHover: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
+  Grapple: {fileID: 0}
 --- !u!1 &1449219959
 GameObject:
   m_ObjectHideFlags: 0
@@ -7692,7 +7697,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1754693306}
-  m_LocalRotation: {x: 0.029506408, y: 0.2364201, z: -0.0071829464, w: 0.97117627}
+  m_LocalRotation: {x: 0.029506408, y: 0.23642008, z: -0.0071829464, w: 0.97117627}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8513,7 +8518,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978705243}
-  m_LocalRotation: {x: 0.029506408, y: 0.23642012, z: -0.0071829474, w: 0.97117627}
+  m_LocalRotation: {x: 0.029506408, y: 0.2364201, z: -0.0071829464, w: 0.97117627}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8824,7 +8829,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2040158174}
-  player: {fileID: 0}
+  player: {fileID: 1134161625}
+  shootSpawn: {fileID: 2040158179}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1024
@@ -8835,8 +8841,8 @@ MonoBehaviour:
   walkPointRange: 5
   timeBetweenAttacks: 1
   projectile: {fileID: 7461339492259765957, guid: 4ec126d682a24be4f90b31dac5400975, type: 3}
-  sightRange: 10
-  attackRange: 5
+  sightRange: 50
+  attackRange: 50
   playerInSightRange: 0
   playerInAttackRange: 0
 --- !u!136 &2040158176
@@ -9278,7 +9284,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131968930}
-  m_LocalRotation: {x: 0.030191537, y: 0.10763357, z: -0.0032701376, w: 0.99372673}
+  m_LocalRotation: {x: 0.030191537, y: 0.10763356, z: -0.0032701374, w: 0.99372673}
   m_LocalPosition: {x: 0, y: 0.034676496, z: -0.20160753}
   m_LocalScale: {x: 0.040321503, y: 0.04032151, z: 0.04032151}
   m_ConstrainProportionsScale: 0

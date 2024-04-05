@@ -9,6 +9,8 @@ public class BroccoliAI : MonoBehaviour
 
     public Transform player;
 
+    public Transform shootSpawn;
+
     public LayerMask whatIsGround, whatIsPlayer;
 
     
@@ -29,7 +31,7 @@ public class BroccoliAI : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -71,7 +73,8 @@ public class BroccoliAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        
+        agent.SetDestination(player.transform.position);
     }
 
     private void AttackPlayer()
@@ -79,14 +82,14 @@ public class BroccoliAI : MonoBehaviour
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
-        transform.LookAt(player);
+        transform.LookAt(player.transform.position);
 
         if (!alreadyAttacked)
         {
             ///Attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            Rigidbody rb = Instantiate(projectile, shootSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 20f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
             ///End of attack code
 
             alreadyAttacked = true;

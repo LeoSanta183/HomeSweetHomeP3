@@ -997,6 +997,7 @@ GameObject:
   - component: {fileID: 206713970}
   - component: {fileID: 206713969}
   - component: {fileID: 206713974}
+  - component: {fileID: 206713975}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1133,6 +1134,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ab42d3deeadc04e85a6c889e809fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &206713975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206713968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d28c70a63b7e64ca80c453860a02ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &223068362
@@ -3344,7 +3357,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1072295754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 206713975}
+        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1072295754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6109,6 +6134,9 @@ MonoBehaviour:
   MeleeSlash: {fileID: 0}
   Footsteps: {fileID: 0}
   buttonHover: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
+  Grapple: {fileID: 0}
+  CarrotGrunt: {fileID: 0}
+  BroccoliGrunt: {fileID: 0}
 --- !u!4 &2065395283
 Transform:
   m_ObjectHideFlags: 0

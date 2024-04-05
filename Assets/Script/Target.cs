@@ -3,42 +3,27 @@ using TMPro;
 
 public class Target : MonoBehaviour
 {
-    public float health = 50f;
-    public float currentHealth;
+    public float maxHealth = 100f;
+    private float currentHealth;
     public Collider[] hitBoxes;
-    PlayerMovement playerScript;
-    
-    AudioManager audioManager;
-    
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
-    
     void Start()
-    
     {
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        currentHealth = health;
-        
+        currentHealth = maxHealth;
     }
-    public void TakeDamage (float amount)
+
+    public void TakeDamage(float damage)
     {
-        currentHealth -= amount;
-        if(currentHealth <= 0f && gameObject.CompareTag("Enemy"))
+        currentHealth -= damage;
+
+        if (currentHealth <= 0f)
         {
-            audioManager.PlaySFX(audioManager.EnemyHit);
             Die();
-        }
-        if(currentHealth <= 0f && gameObject.CompareTag("Player"))
-        {
-            playerScript.Lose();
-            Debug.Log("You lose");
         }
     }
 
     void Die()
     {
+        // Perform any death-related actions here, such as playing death animation, scoring points, etc.
         Destroy(gameObject);
     }
 }

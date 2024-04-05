@@ -210,11 +210,11 @@ public class PlayerMovement : MonoBehaviour
                 continue;
             
 
-            int damage = 0;
+            
             switch(c.name)
             {
             case "Body":
-            damage = 10;
+                audioManager.PlaySFX(audioManager.Bullet);
             break;
 
             default:
@@ -222,8 +222,16 @@ public class PlayerMovement : MonoBehaviour
             break;
             }
 
-            targetScript.TakeDamage(damage);
-            
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.forward, out hit))
+            {
+                Target enemyHealth = hit.collider.GetComponent<Target>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(20);
+                }
+            }
+
         }
         
     }

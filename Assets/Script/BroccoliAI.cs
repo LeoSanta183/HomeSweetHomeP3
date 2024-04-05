@@ -89,7 +89,7 @@ public class BroccoliAI : MonoBehaviour
             ///Attack code here
             Rigidbody rb = Instantiate(projectile, shootSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
+            rb.AddForce(transform.up * 1f, ForceMode.Impulse);
             ///End of attack code
 
             alreadyAttacked = true;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,12 +10,12 @@ public class PlayerHealth : MonoBehaviour
     public Slider easeHealthSlider;
     public float maxHealth = 100f;
     public float health;
-    PlayerMovement playerScript;
+    
     private float lerpSpeed = 0.05f;
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        
         health = maxHealth;
     }
 
@@ -26,10 +27,6 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = health;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            TakeDamage(10);
-        }
         
         if(healthSlider.value != easeHealthSlider.value)
         {
@@ -40,10 +37,25 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage (float amount)
     {
         health -= amount;
-        if(health <= 0f && gameObject.CompareTag("Player"))
+        if(health <= 0f)
         {
-            playerScript.Lose();
+            SceneManager.LoadScene("Lose Scene");
             Debug.Log("You lose");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            TakeDamage(50);
+        }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage(50);
+        }
+    }
+    
 }

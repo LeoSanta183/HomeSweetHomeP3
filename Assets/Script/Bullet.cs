@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    PlayerHealth pHealthScript;
+    
     public float damage;
     // Start is called before the first frame update
     void Start()
     {
-       pHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+       
 
     }
 
@@ -21,8 +21,6 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        damage = 5;
-        pHealthScript.TakeDamage(damage);
-        
+        Destroy(this.gameObject);
     }
 }

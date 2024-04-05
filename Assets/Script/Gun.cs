@@ -36,34 +36,40 @@ public class Gun : MonoBehaviour
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
-        targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+        
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
-private void Update()
-{
-    MyInput();
-
-    //SetText
-    text.SetText(bulletsLeft + " / " + magazineSize);
-    MiniText.text = magazineSize.ToString();
-}
-
-private void MyInput()
-{
-    if(allowButtonHold) shooting = Input.GetButton("Fire1");
-    else shooting = Input.GetButtonDown("Fire1");
-
-    if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading) Reload();
-    
-    //Shoot
-    if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+    private void Start()
     {
-        bulletsShot = bulletsPerTap;
-        Shoot();
+        
     }
-}
+
+    private void Update()
+    {
+        
+        MyInput();
+
+        //SetText
+        text.SetText(bulletsLeft + " / " + magazineSize);
+        MiniText.text = magazineSize.ToString();
+    }
+
+    private void MyInput()
+    {
+        if(allowButtonHold) shooting = Input.GetButton("Fire1");
+        else shooting = Input.GetButtonDown("Fire1");
+
+        if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading) Reload();
+    
+        //Shoot
+        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+        {
+            bulletsShot = bulletsPerTap;
+            Shoot();
+        }
+    }
  
     private void OnShoot()
     {
@@ -86,7 +92,11 @@ private void MyInput()
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range, whatIsEnemy))
         {
             Debug.Log(rayHit.collider.name);
-            targetScript.TakeDamage(damage);
+            Target enemyHealth = rayHit.collider.GetComponent<Target>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage);
+            }
 
         }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -46,14 +47,14 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-        animate = GetComponent<Animator>();
+        animate = GetComponentInChildren<Animator>();
     }
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-         targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+        targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
     }
 
     private void Update()
@@ -81,7 +82,8 @@ public class PlayerMovement : MonoBehaviour
             SpearAttack(hitBoxes[0]);
         }
 
-        animate.SetFloat("MovementSpeed", Mathf.Abs(moveSpeed));
+        animate.SetFloat("MovementSpeed", Mathf.Abs(horizontalInput));
+        animate.SetFloat("MovementSpeed", Mathf.Abs(veritcalInput));
 
     }
 
@@ -187,6 +189,15 @@ public class PlayerMovement : MonoBehaviour
         return velocityXZ + velocityY;
     }
 
+    public void grappleAnimate()
+    {
+        animate.SetBool("Grappling", true);
+    }
+
+    public void grappleFinished()
+    {
+        animate.SetBool("Grappling", false);
+    }
     public Collider[] hitBoxes;
 
     
@@ -219,7 +230,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Lose()
     {
-        
+        Debug.Log("Dead Lol");
+        SceneManager.LoadScene("Lose Screen");
     }
 
     private void Jump()

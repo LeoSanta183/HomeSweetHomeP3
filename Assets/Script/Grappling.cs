@@ -37,7 +37,10 @@ public class Grappling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(grappleKey)) StartGrapple();
+        if (Input.GetKeyDown(grappleKey)) 
+            StartGrapple();
+            
+
 
         if (grapplingCdTimer > 0)
             grapplingCdTimer -= Time.deltaTime;
@@ -51,7 +54,7 @@ public class Grappling : MonoBehaviour
     private void StartGrapple()
     {
         if (grapplingCdTimer > 0) return;
-
+        pm.grappleAnimate();
         grappling = true;
 
         pm.freeze = true;
@@ -97,6 +100,7 @@ public class Grappling : MonoBehaviour
         grappling = false;
         grapplingCdTimer = grapplingCd;
         lr.enabled = false;
+        pm.grappleFinished();
     }
 
 }

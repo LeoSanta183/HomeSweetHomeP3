@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class Quit : MonoBehaviour
 {
+    
     AudioManager audioManager;
     private void Awake()
     {
@@ -21,10 +21,9 @@ public class PlayButton : MonoBehaviour
     {
         
     }
-
-    public void Play()
+    public void QuitGame()
     {
-        SceneManager.LoadScene("Kingdom");
+        Application.Quit();
         audioManager.PlaySFX(audioManager.buttonHover);
     }
 }

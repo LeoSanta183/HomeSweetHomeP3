@@ -18,6 +18,9 @@ public class CarrotAI : MonoBehaviour
     [SerializeField] float sightRange, attackRange;
     bool playerInSight, playerInAttack, isStunned;
 
+    AudioManager audioManager;
+    private bool hasPlayedGrunt = false;
+
     PlayerHealth pHealthScript;
     // Start is called before the first frame update
     void Start()
@@ -25,21 +28,32 @@ public class CarrotAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
         pHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
-        playerInAttack = Physics.CheckSphere(transform.position, attackRange, playerLayer);
+    playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
+    playerInAttack = Physics.CheckSphere(transform.position, attackRange, playerLayer);
 
-        if (!playerInSight && !playerInAttack && !isStunned) Patrol();
-        if (playerInSight && !playerInAttack && !isStunned) Chase();
-        if (playerInSight && playerInAttack) Attack();
+    if (!playerInSight && !playerInAttack && !isStunned) 
+        {
+        Patrol();
+        hasPlayedGrunt = false; // Reset the flag if the player is not in sight
+        }
+    if (playerInSight && !playerInAttack && !isStunned && !hasPlayedGrunt) 
+        {
+        Chase();
+        audioManager.PlaySFX(audioManager.CarrotGrunt);
+        hasPlayedGrunt = true; // Set the flag after playing the sound
+        }
+    if (playerInSight && playerInAttack) Attack();
+    }
 
         
-    }
+    
 
     void Attack()
     {

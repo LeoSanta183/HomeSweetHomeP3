@@ -16,9 +16,9 @@ public class Win : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("WinScene");
             Cursor.lockState = CursorLockMode.None;

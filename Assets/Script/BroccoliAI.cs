@@ -29,10 +29,14 @@ public class BroccoliAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    AudioManager audioManager;
+    private bool hasPlayedGrunt = false;
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update()
@@ -41,8 +45,17 @@ public class BroccoliAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (!playerInSightRange && !playerInAttackRange) 
+        {
+            Patroling();
+            hasPlayedGrunt = false; // Reset the flag if the player is not in sight
+        }
+        if (playerInSightRange && !playerInAttackRange && !hasPlayedGrunt) 
+        {
+            ChasePlayer();
+            audioManager.PlaySFX(audioManager.BroccoliGrunt);
+            hasPlayedGrunt = true; // Set the flag after playing the sound
+        }
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
 

@@ -50,11 +50,11 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            TakeDamage(50);
+            TakeDamage(10);
         }
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(50);
+            TakeDamage(10);
         }
     }
     

@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip Footsteps;
     public AudioClip buttonHover;
     public AudioClip Grapple;
+    public AudioClip CarrotGrunt;
+    public AudioClip BroccoliGrunt;
 
     // Start is called before the first frame update
     void Start()

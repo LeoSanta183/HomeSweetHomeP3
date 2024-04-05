@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    Target targetScript;
+    
 
     AudioManager audioManager;
 
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        targetScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Target>();
+        
     }
 
     private void Update()
@@ -201,45 +201,35 @@ public class PlayerMovement : MonoBehaviour
     public Collider[] hitBoxes;
 
     
-    private void SpearAttack(Collider col)
+   private void SpearAttack(Collider col)
     {
-        var cols = Physics.OverlapBox(col.bounds.center,col.bounds.extents,col.transform.rotation,LayerMask.GetMask("HitBox"));
-        foreach(Collider c in cols)
-        {
-            if(c.transform.root == transform)
-                continue;
-            
+    var cols = Physics.OverlapBox(col.bounds.center, col.bounds.extents, col.transform.rotation, LayerMask.GetMask("HitBox"));
+    foreach (Collider c in cols)
+    {
+        if (c.transform.root == transform)
+            continue;
 
-            
-            switch(c.name)
-            {
+        // Assuming the EnemyHealth script is attached to the enemies
+        Target enemyHealth = c.GetComponent<Target>();
+        if (enemyHealth != null)
+        {
+            // Adjust the damage value as needed
+            float damage = 10f; // Example damage value
+            enemyHealth.TakeDamage(damage);
+        }
+
+        switch (c.name)
+        {
             case "Body":
                 audioManager.PlaySFX(audioManager.Bullet);
-            break;
+                break;
 
             default:
-            Debug.Log("Body not found");
-            break;
-            }
-
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit))
-            {
-                Target enemyHealth = hit.collider.GetComponent<Target>();
-                if (enemyHealth != null)
-                {
-                    enemyHealth.TakeDamage(20);
-                }
-            }
-
+                Debug.Log("Body not found");
+                break;
+        }
         }
         
-    }
-
-    public void Lose()
-    {
-        Debug.Log("Dead Lol");
-        SceneManager.LoadScene("Lose Screen");
     }
 
     private void Jump()

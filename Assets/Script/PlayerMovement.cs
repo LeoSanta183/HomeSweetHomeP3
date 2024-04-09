@@ -206,11 +206,14 @@ public class PlayerMovement : MonoBehaviour
     var cols = Physics.OverlapBox(col.bounds.center, col.bounds.extents, col.transform.rotation, LayerMask.GetMask("HitBox"));
     foreach (Collider c in cols)
     {
+        animate.SetTrigger("Swinging");
         if (c.transform.root == transform)
             continue;
 
+
         // Assuming the EnemyHealth script is attached to the enemies
         Target enemyHealth = c.GetComponent<Target>();
+       
         if (enemyHealth != null)
         {
             // Adjust the damage value as needed
@@ -243,5 +246,20 @@ public class PlayerMovement : MonoBehaviour
     public void ResetJump()
     {
         readyToJump = true;
+    }
+
+    public void Shooting()
+    {
+        animate.SetTrigger("Shooting");
+    }
+
+    public void ShootingHold()
+    {
+        animate.SetTrigger("LongShoot");
+    }
+
+    public void Reloading()
+    {
+        animate.SetTrigger("Reload");
     }
 }

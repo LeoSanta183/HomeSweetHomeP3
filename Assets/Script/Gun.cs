@@ -29,14 +29,16 @@ public class Gun : MonoBehaviour
     public TextMeshProUGUI text;
     public TextMeshProUGUI MiniText;
     Target targetScript;
-
+    PlayerMovement pMovement;
+    GameObject player;
     AudioManager audioManager;
 
     private void Awake()
     {
+        player = GameObject.Find("Player");
         bulletsLeft = magazineSize;
         readyToShoot = true;
-        
+        pMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
     }
@@ -68,6 +70,8 @@ public class Gun : MonoBehaviour
         {
             bulletsShot = bulletsPerTap;
             Shoot();
+            ShootAnim();
+            
         }
     }
  
@@ -80,14 +84,12 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         readyToShoot = false;
-
         //Spread
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
 
         //Calculate Direction with Spread
         Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
-
         //RayCast
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range, whatIsEnemy))
         {
@@ -108,6 +110,7 @@ public class Gun : MonoBehaviour
         Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
         bulletsLeft--;
         bulletsShot--;
+        
 
         Invoke("ResetShot", timeBetweenShooting);
 
@@ -119,6 +122,11 @@ public class Gun : MonoBehaviour
         audioManager.PlaySFX(audioManager.Bullet);
     }
 
+    public void ShootAnim()
+    {
+         pMovement.Shooting();
+    }
+
     private void ResetShot()
     {
         readyToShoot = true;
@@ -128,6 +136,7 @@ public class Gun : MonoBehaviour
     {
         reloading = true;
         Invoke("ReloadFinished", reloadTime);
+        pMovement.Reloading();
     }
 
     private void ReloadFinished()

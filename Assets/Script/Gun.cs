@@ -6,7 +6,7 @@ using TMPro;
 public class Gun : MonoBehaviour
 {
 
-    //Gun stats
+     //Gun stats
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
     public int magazineSize, bulletsPerTap;
@@ -45,12 +45,12 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     private void Update()
     {
-        
+
         MyInput();
 
         //SetText
@@ -64,14 +64,14 @@ public class Gun : MonoBehaviour
         else shooting = Input.GetButtonDown("Fire1");
 
         if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading) Reload();
-    
+
         //Shoot
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = bulletsPerTap;
             Shoot();
             ShootAnim();
-            
+
         }
     }
  
@@ -80,8 +80,7 @@ public class Gun : MonoBehaviour
         Debug.Log("shootValue");
         Shoot();
     }
-
-    void Shoot()
+void Shoot()
     {
         readyToShoot = false;
         //Spread
@@ -103,14 +102,14 @@ public class Gun : MonoBehaviour
         }
 
         //ShakeCamera
-        
+
 
         //Graphics
         Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
         Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
         bulletsLeft--;
         bulletsShot--;
-        
+
 
         Invoke("ResetShot", timeBetweenShooting);
 

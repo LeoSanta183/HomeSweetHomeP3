@@ -32,11 +32,14 @@ public class BroccoliAI : MonoBehaviour
     AudioManager audioManager;
     private bool hasPlayedGrunt = false;
 
+    Animator animate;
+
     private void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        animate = GetComponent<Animator>();
     }
 
     private void Update()
@@ -96,6 +99,8 @@ public class BroccoliAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player.transform.position);
+
+        animate.SetTrigger("Attack");
 
         if (!alreadyAttacked)
         {

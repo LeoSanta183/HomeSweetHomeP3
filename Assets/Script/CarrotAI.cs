@@ -22,6 +22,8 @@ public class CarrotAI : MonoBehaviour
     private bool hasPlayedGrunt = false;
 
     PlayerHealth pHealthScript;
+
+    Animator animate;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class CarrotAI : MonoBehaviour
         player = GameObject.Find("Player");
         pHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        animate = GetComponent<Animator>();
 
     }
 
@@ -57,7 +60,7 @@ public class CarrotAI : MonoBehaviour
 
     void Attack()
     {
-
+        animate.SetTrigger("CarrotAttack");
     }
     void Chase()
     {

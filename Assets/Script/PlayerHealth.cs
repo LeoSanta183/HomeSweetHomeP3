@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0f)
         {
             SceneManager.LoadScene("Lose Scene");
-            Debug.Log("You lose");
+            
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }

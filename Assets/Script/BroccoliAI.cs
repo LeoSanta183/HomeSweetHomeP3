@@ -7,7 +7,7 @@ public class BroccoliAI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    public Transform player;
+    Transform player;
 
     public Transform shootSpawn;
 

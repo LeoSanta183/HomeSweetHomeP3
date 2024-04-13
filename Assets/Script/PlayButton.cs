@@ -24,7 +24,7 @@ public class PlayButton : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Kingdom");
+        SceneManager.LoadScene("HUB");
         audioManager.PlaySFX(audioManager.buttonHover);
     }
 }

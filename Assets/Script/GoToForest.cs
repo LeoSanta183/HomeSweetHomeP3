@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GoToForest : MonoBehaviour
 {
@@ -55,7 +56,7 @@ public class GoToForest : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(KeyCode.E))
         {
-
+            SceneManager.LoadScene("Forest");
         }
     }
 }

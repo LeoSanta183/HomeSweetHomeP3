@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GoToKingdom : MonoBehaviour
 {
@@ -56,7 +57,7 @@ public class GoToKingdom : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(KeyCode.E))
         {
-            
+            SceneManager.LoadScene("Kingdom");
         }
     }
 }

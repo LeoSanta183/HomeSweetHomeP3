@@ -25,7 +25,7 @@ public class Target : MonoBehaviour
 
     void Die()
     {
-        // Perform any death-related actions here, such as playing death animation, scoring points, etc.
+        FindObjectOfType<ObjectDespawner>().EnemyDestroyed();
         Destroy(gameObject);
         audioManager.PlaySFX(audioManager.EnemyHit);
     }

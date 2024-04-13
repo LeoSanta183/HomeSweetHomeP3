@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class GoToCanyon : MonoBehaviour
 {
@@ -40,7 +42,7 @@ public class GoToCanyon : MonoBehaviour
         if (promptText != null)
         {
             promptText.gameObject.SetActive(true);
-            promptText.text = "Press 'E' to go to Forest";
+            promptText.text = "Press 'E' to go to Canyon";
         }
     }
 
@@ -55,7 +57,7 @@ public class GoToCanyon : MonoBehaviour
     {
         if (inRange && Input.GetKeyDown(KeyCode.E))
         {
-
+            SceneManager.LoadScene("Canyon");
         }
     }
 }

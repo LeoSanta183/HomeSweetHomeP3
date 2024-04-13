@@ -8,6 +8,7 @@ TagManager:
   - Spear
   - Audio
   - Bullet
+  - GameManager
   layers:
   - Default
   - TransparentFX

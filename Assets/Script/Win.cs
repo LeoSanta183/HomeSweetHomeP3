@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour
 {
+    PlayerMovement pMovement;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pMovement = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -16,13 +17,12 @@ public class Win : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("WinScene");
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            SceneManager.LoadScene("HUB");
+            pMovement.CoinCollect();
         }
     }
 }

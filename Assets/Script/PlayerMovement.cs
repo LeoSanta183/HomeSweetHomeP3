@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    
+    public static int totalCoinsRequired = 3;
+    private static int currentCoinCount = 0;
 
     AudioManager audioManager;
 
@@ -233,6 +234,19 @@ public class PlayerMovement : MonoBehaviour
         }
         }
         
+    }
+    public void CoinCollect()
+    {
+
+        currentCoinCount++;
+
+
+        if (currentCoinCount >= totalCoinsRequired)
+        {
+            SceneManager.LoadScene("WinScene");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     private void Jump()

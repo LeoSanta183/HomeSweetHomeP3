@@ -7,10 +7,11 @@ public class ObjectDespawner : MonoBehaviour
     public GameObject objectToDestroyWhenQuestComplete;
     public int totalEnemiesRequired = 2;
     private int currentEnemyCount = 0;
+    AudioManager audioManager;
 
     void Start()
     {
-        
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
    
@@ -26,6 +27,7 @@ public class ObjectDespawner : MonoBehaviour
             if (objectToDestroyWhenQuestComplete != null)
             {
                 Destroy(objectToDestroyWhenQuestComplete);
+                audioManager.PlaySFX(audioManager.RockCollapse);
             }
             else
             {

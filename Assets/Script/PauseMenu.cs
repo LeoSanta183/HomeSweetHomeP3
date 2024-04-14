@@ -19,6 +19,11 @@ public class PauseMenu : MonoBehaviour
     [Header("First Selected Options")]
     [SerializeField] private GameObject _resumeFirst;
     [SerializeField] private GameObject _settingsMenuFirst;
+
+    // Panels for different options tabs
+    public GameObject modeSettingsPanel;
+    public GameObject creditsSettingsPanel;
+
         AudioManager audioManager;
     private void Awake()
     {
@@ -118,5 +123,22 @@ public class PauseMenu : MonoBehaviour
         audioManager.PlaySFX(audioManager.buttonHover);
         Debug.Log("Returning to Main Menu...");
         SceneManager.LoadScene("HUB");
+    }
+
+    public void Quit()
+    {
+        audioManager.PlaySFX(audioManager.buttonHover);
+        Debug.Log("Returning to Main Menu...");
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void ShowTab(GameObject tabPanel)
+    {
+        // Deactivate all option panels
+        modeSettingsPanel.SetActive(false);
+        creditsSettingsPanel.SetActive(false);
+
+        // Activate the selected tab
+        tabPanel.SetActive(true);
     }
 }

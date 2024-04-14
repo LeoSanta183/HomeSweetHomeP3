@@ -23,7 +23,9 @@ public class Quit : MonoBehaviour
     }
     public void QuitGame()
     {
+        PlayerPrefs.DeleteAll();
         Application.Quit();
         audioManager.PlaySFX(audioManager.buttonHover);
     }
+
 }

@@ -58,22 +58,31 @@ public class Gun : MonoBehaviour
         MiniText.text = magazineSize.ToString();
     }
 
-    private void MyInput()
-    {
-        if(allowButtonHold) shooting = Input.GetButton("Fire1");
-        else shooting = Input.GetButtonDown("Fire1");
+private void MyInput()
+{
+    // Get input from the right trigger (RT) and the left trigger (LT)
+    float rightTrigger = Input.GetAxis("RightTrigger");
+    float leftTrigger = Input.GetAxis("LeftTrigger");
 
-        if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading) Reload();
-
-        //Shoot
-        if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
+    if (allowButtonHold)
         {
-            bulletsShot = bulletsPerTap;
-            Shoot();
-            ShootAnim();
-
+            shooting = Input.GetButton("RT");
         }
+    else
+    {
+        shooting = Input.GetButtonDown("RT");
     }
+    if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading)
+        Reload();
+
+    // Check if either trigger is being pressed
+    if (readyToShoot && (shooting || rightTrigger > 0) && !reloading && bulletsLeft > 0)
+    {
+        bulletsShot = bulletsPerTap;
+        Shoot();
+        ShootAnim();
+    }
+}
  
     private void OnShoot()
     {

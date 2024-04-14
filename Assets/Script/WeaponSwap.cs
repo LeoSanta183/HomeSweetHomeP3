@@ -7,96 +7,85 @@ public class WeaponSwap : MonoBehaviour
     public GameObject MiniGunUI;
     public GameObject MeleeUI;
     public GameObject MiniMeleeUI;
-    // Start is called before the first frame update
+
     void Start()
     {
-      SelectWeapon();
-      MeleeUI.SetActive(false);
-      MiniGunUI.SetActive(false);  
+        SelectWeapon();
+        MeleeUI.SetActive(false);
+        MiniGunUI.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         int previousSelectedWeapon = selectedWeapon;
+
+        // Weapon swapping using the mouse scroll wheel
         if (Input.GetAxis("Mouse ScrollWheel") > 0f)
-        {
-            if(selectedWeapon >= transform.childCount - 1)
-            
-            {
-                selectedWeapon = 0;
-                GunUI.SetActive(true);
-                MiniGunUI.SetActive(false);
-                MeleeUI.SetActive(false);
-                MiniMeleeUI.SetActive(true);
-            }
-            else
-            {
-                selectedWeapon++;
-                selectedWeapon = 1;
-                GunUI.SetActive(false);
-                MiniGunUI.SetActive(true);
-                MeleeUI.SetActive(true);
-                MiniMeleeUI.SetActive(false);
-            }
-        }
+            SelectNextWeapon();
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0f)
-        {
-            if(selectedWeapon <= 0)
-            {
-            selectedWeapon = transform.childCount - 1;
-            selectedWeapon = 1;
-            GunUI.SetActive(false);
-            MiniGunUI.SetActive(true);
-            MeleeUI.SetActive(true);
-            MiniMeleeUI.SetActive(false);
-            }
-            else
-            {
-                selectedWeapon--;
-                 GunUI.SetActive(true);
-                MiniGunUI.SetActive(false);
-                MeleeUI.SetActive(false);
-                MiniMeleeUI.SetActive(true);
-            }
-        }
-        
-        if (Input.GetKeyDown("1"))
-        {
+            SelectPreviousWeapon();
+
+        // Weapon swapping using the number keys
+        if (Input.GetKeyDown(KeyCode.Alpha1))
             selectedWeapon = 0;
-            GunUI.SetActive(true);
-            MiniGunUI.SetActive(false);
-            MeleeUI.SetActive(false);
-            MiniMeleeUI.SetActive(true);
-        }
-        
-        if (Input.GetKeyDown("2") && transform.childCount >= 2)
-        {
+
+        if (Input.GetKeyDown(KeyCode.Alpha2) && transform.childCount >= 2)
             selectedWeapon = 1;
-            GunUI.SetActive(false);
-            MiniGunUI.SetActive(true);
-            MeleeUI.SetActive(true);
-            MiniMeleeUI.SetActive(false);
-        }
-         
-        
-        if (previousSelectedWeapon != selectedWeapon)
+
+        // Weapon swapping using the Y button on the Xbox controller
+        if (Input.GetButtonDown("YButton"))
         {
-            SelectWeapon();
+            // Toggle between weapons if there are multiple weapons available
+            if (transform.childCount >= 2)
+                selectedWeapon = (selectedWeapon + 1) % transform.childCount;
         }
+
+        // Update weapon UI and selection
+        if (previousSelectedWeapon != selectedWeapon)
+            SelectWeapon();
+    }
+
+    void SelectNextWeapon()
+    {
+        selectedWeapon = (selectedWeapon + 1) % transform.childCount;
+        SelectWeapon(); // Update UI when selecting next weapon
+    }
+
+    void SelectPreviousWeapon()
+    {
+        selectedWeapon = (selectedWeapon - 1 + transform.childCount) % transform.childCount;
+        SelectWeapon(); // Update UI when selecting previous weapon
     }
 
     void SelectWeapon()
+    {
+        int i = 0;
+        foreach (Transform weapon in transform)
         {
-            int i = 0;
-            foreach (Transform weapon in transform)
+            bool isActive = i == selectedWeapon;
+            weapon.gameObject.SetActive(isActive);
+
+            // Update UI based on weapon selection
+            if (isActive)
             {
-                if (i == selectedWeapon)
-                    weapon.gameObject.SetActive(true);
+                if (i == 0)
+                {
+                    GunUI.SetActive(true);
+                    MiniGunUI.SetActive(false);
+                    MeleeUI.SetActive(false);
+                    MiniMeleeUI.SetActive(true);
+                }
                 else
-                    weapon.gameObject.SetActive(false);
-                    i++;
+                {
+                    GunUI.SetActive(false);
+                    MiniGunUI.SetActive(true);
+                    MeleeUI.SetActive(true);
+                    MiniMeleeUI.SetActive(false);
+                }
             }
+
+            i++;
         }
+    }
 }

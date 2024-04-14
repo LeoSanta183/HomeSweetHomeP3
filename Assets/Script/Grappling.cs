@@ -37,7 +37,7 @@ public class Grappling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(grappleKey)) 
+        if (Input.GetKeyDown(grappleKey) || Input.GetAxis("LeftTrigger") > 0) 
             StartGrapple();
             
 

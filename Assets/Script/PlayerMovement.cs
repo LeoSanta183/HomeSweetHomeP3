@@ -63,6 +63,8 @@ public class PlayerMovement : MonoBehaviour
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
+        float rightTrigger = Input.GetAxis("RightTrigger");
+
         MyInput();
         SpeedControl();
 
@@ -78,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
 
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("RT") || rightTrigger > 0)
         {
             SpearAttack(hitBoxes[0]);
         }
@@ -102,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         veritcalInput = Input.GetAxisRaw("Vertical");
+        
 
         
 

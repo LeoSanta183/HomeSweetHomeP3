@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject PausePanel;
@@ -10,9 +11,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject ControlScreen;
     public GameObject OptionsPanel;
     public GameObject crosshair;
+    public GameObject HUD;
     public static bool GameIsPaused = false;
     public static bool ControlsIsOn = false;
     public static bool OptionsIsOn = false;
+
+    [Header("First Selected Options")]
+    [SerializeField] private GameObject _resumeFirst;
+    [SerializeField] private GameObject _settingsMenuFirst;
         AudioManager audioManager;
     private void Awake()
     {
@@ -38,7 +44,9 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
-
+        }
+        if (Input.GetButtonDown("Cancel"))
+        {
             if(ControlsIsOn)
             {
                 Pause();
@@ -58,9 +66,11 @@ public class PauseMenu : MonoBehaviour
         ControlButton.SetActive(false);
         ControlScreen.SetActive(false);
         OptionsPanel.SetActive(false);
+        HUD.SetActive(false);
         audioManager.PlaySFX(audioManager.buttonHover);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        EventSystem.current.SetSelectedGameObject(_resumeFirst);
     }
 
     public void Continue()
@@ -71,9 +81,12 @@ public class PauseMenu : MonoBehaviour
         PauseButton.SetActive(true);
         crosshair.SetActive(true);
         ControlButton.SetActive(true);
+        HUD.SetActive(true);
         audioManager.PlaySFX(audioManager.buttonHover);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
     
     public void Options()
@@ -86,7 +99,9 @@ public class PauseMenu : MonoBehaviour
         ControlButton.SetActive(false);
         ControlScreen.SetActive(false);
         OptionsPanel.SetActive(true);
+        HUD.SetActive(false);
         audioManager.PlaySFX(audioManager.buttonHover);
+        EventSystem.current.SetSelectedGameObject(_settingsMenuFirst);
     }
 
     public void Controls()
@@ -94,6 +109,7 @@ public class PauseMenu : MonoBehaviour
         ControlButton.SetActive(false);
         audioManager.PlaySFX(audioManager.buttonHover);
         ControlScreen.SetActive(true);
+        HUD.SetActive(false);
         ControlsIsOn = true;
 
     }
@@ -101,6 +117,6 @@ public class PauseMenu : MonoBehaviour
     {
         audioManager.PlaySFX(audioManager.buttonHover);
         Debug.Log("Returning to Main Menu...");
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("HUB");
     }
 }

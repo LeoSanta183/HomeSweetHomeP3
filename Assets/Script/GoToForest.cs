@@ -54,7 +54,7 @@ public class GoToForest : MonoBehaviour
     }
     private void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E))
+        if (inRange && Input.GetButtonDown("Enter"))
         {
             SceneManager.LoadScene("Forest");
         }

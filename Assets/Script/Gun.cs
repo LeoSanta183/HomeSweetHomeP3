@@ -98,7 +98,7 @@ private void MyInput()
     {
         sprayAndPray = true;
         magazineSize = 100000000;
-        text.SetText("Unlimited");
+        text.SetText("∞");
         MiniText.text = magazineSize.ToString();
 
     }

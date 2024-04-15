@@ -437,7 +437,9 @@ MonoBehaviour:
 
 
 
-    P'
+    P
+
+    E'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1402,7 +1404,10 @@ MonoBehaviour:
 
     Look Right =
 
-    Menu Button ='
+    Menu Button =
+
+    Interact
+    = '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3443,8 +3448,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -164}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: -175.056}
+  m_SizeDelta: {x: 100, y: 103.402}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1093382564
 MonoBehaviour:
@@ -4318,6 +4323,11 @@ MonoBehaviour:
   ControlScreen: {fileID: 521692529}
   OptionsPanel: {fileID: 1722771831}
   crosshair: {fileID: 1644205954}
+  HUD: {fileID: 0}
+  _resumeFirst: {fileID: 0}
+  _settingsMenuFirst: {fileID: 0}
+  modeSettingsPanel: {fileID: 0}
+  creditsSettingsPanel: {fileID: 0}
 --- !u!114 &1277052078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5333,9 +5343,16 @@ MonoBehaviour:
 
     Left Stick (Right)
 
+    Left Trigger
 
+    Right Trigger
 
+    Right
+    Trigger
 
+    X
+
+    Y
 
     Right Stick (Up)
 
@@ -5344,7 +5361,11 @@ MonoBehaviour:
     Right
     Stick (Left)
 
-    RIght Stick (Right)'
+    RIght Stick (Right)
+
+    Start Button
+
+    X'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5488,7 +5509,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -6137,6 +6158,7 @@ MonoBehaviour:
   Grapple: {fileID: 0}
   CarrotGrunt: {fileID: 0}
   BroccoliGrunt: {fileID: 0}
+  RockCollapse: {fileID: 0}
 --- !u!4 &2065395283
 Transform:
   m_ObjectHideFlags: 0

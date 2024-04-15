@@ -18,6 +18,7 @@ public class MainMenuLW : MonoBehaviour
     }
     public void LoadScene()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("Main Menu");
     }
 }

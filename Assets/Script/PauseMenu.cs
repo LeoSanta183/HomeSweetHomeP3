@@ -98,7 +98,7 @@ public class PauseMenu : MonoBehaviour
     {
         PausePanel.SetActive(false);
         Time.timeScale = 0;
-        GameIsPaused = true;
+        GameIsPaused = false;
         ControlsIsOn = true;
         PauseButton.SetActive(false);
         ControlButton.SetActive(false);
@@ -116,6 +116,7 @@ public class PauseMenu : MonoBehaviour
         ControlScreen.SetActive(true);
         HUD.SetActive(false);
         ControlsIsOn = true;
+        GameIsPaused = false;
 
     }
     public void Exit()
@@ -137,6 +138,7 @@ public class PauseMenu : MonoBehaviour
         // Deactivate all option panels
         modeSettingsPanel.SetActive(false);
         creditsSettingsPanel.SetActive(false);
+        GameIsPaused = false;
 
         // Activate the selected tab
         tabPanel.SetActive(true);

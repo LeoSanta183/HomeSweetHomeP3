@@ -61,7 +61,7 @@ public class GoToKingdom : MonoBehaviour
 
     public void LoadLevel(string levelName)
     {
-        if (IsLevelCompleted("Forest"))
+        if (IsLevelCompleted("Kingdom"))
         {
             Debug.Log("Level already completed!");
             promptText.text = "Level already completed!";
@@ -70,12 +70,12 @@ public class GoToKingdom : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Forest");
+            SceneManager.LoadScene("Kingdom");
         }
     }
 
-    public bool IsLevelCompleted(string Forest)
+    public bool IsLevelCompleted(string Kingdom)
     {
-        return PlayerPrefs.GetInt(Forest + "_Completed", 0) == 1;
+        return PlayerPrefs.GetInt(Kingdom + "_Completed", 0) == 1;
     }
 }

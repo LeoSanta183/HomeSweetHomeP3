@@ -9,7 +9,7 @@ public class Gun : MonoBehaviour
      //Gun stats
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
-    public int magazineSize, bulletsPerTap;
+    public int magazineSize = 30, bulletsPerTap;
     public bool allowButtonHold;
     int bulletsLeft, bulletsShot;
 
@@ -32,6 +32,7 @@ public class Gun : MonoBehaviour
     PlayerMovement pMovement;
     GameObject player;
     AudioManager audioManager;
+    public bool sprayAndPray;
 
     private void Awake()
     {
@@ -54,8 +55,12 @@ public class Gun : MonoBehaviour
         MyInput();
 
         //SetText
-        text.SetText(bulletsLeft + " / " + magazineSize);
-        MiniText.text = magazineSize.ToString();
+        if(!sprayAndPray)
+        {
+            text.SetText(bulletsLeft + " / " + magazineSize);
+            MiniText.text = magazineSize.ToString();
+        }
+        
     }
 
 private void MyInput()
@@ -89,6 +94,14 @@ private void MyInput()
         Debug.Log("shootValue");
         Shoot();
     }
+    public void InfiniteShoot()
+    {
+        sprayAndPray = true;
+        magazineSize = 100000000;
+        text.SetText("Unlimited");
+        MiniText.text = magazineSize.ToString();
+
+    }
 void Shoot()
     {
         readyToShoot = false;
@@ -114,10 +127,12 @@ void Shoot()
 
 
         //Graphics
+        
         Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
         Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
         bulletsLeft--;
         bulletsShot--;
+
 
 
         Invoke("ResetShot", timeBetweenShooting);

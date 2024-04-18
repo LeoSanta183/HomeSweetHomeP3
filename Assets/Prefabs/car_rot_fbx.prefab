@@ -1109,7 +1109,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   range: 10
-  sightRange: 10
+  sightRange: 50
   attackRange: 0
 --- !u!195 &6519862668831719891
 NavMeshAgent:

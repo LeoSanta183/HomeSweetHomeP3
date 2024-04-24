@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 52812278}
   - component: {fileID: 52812277}
   - component: {fileID: 52812276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2204,6 +2204,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
 --- !u!4 &118444124 stripped
@@ -2793,6 +2801,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ae2ab2db893296c4c953160b48f35410, type: 3}
       propertyPath: m_Name
       value: DropCandy5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae2ab2db893296c4c953160b48f35410, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae2ab2db893296c4c953160b48f35410, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2ab2db893296c4c953160b48f35410, type: 3}
@@ -3944,6 +3960,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
       propertyPath: m_Name
       value: Canyon1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
@@ -7526,6 +7550,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
 --- !u!4 &565281357 stripped
@@ -7900,11 +7932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.007425976
+      value: -0.007425978
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.823221
+      value: -0.8232211
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.z
@@ -9562,6 +9594,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
 --- !u!4 &653650161 stripped
@@ -9971,6 +10011,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
@@ -10500,6 +10548,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
       propertyPath: m_Name
       value: Canyon3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
@@ -11108,6 +11164,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
@@ -11937,6 +12001,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
       propertyPath: m_Name
       value: Canyon1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
@@ -13692,6 +13764,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon3
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
 --- !u!4 &1037469589 stripped
@@ -15148,6 +15228,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
 --- !u!4 &1119240375 stripped
@@ -16152,6 +16240,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
 --- !u!4 &1205340431 stripped
@@ -16703,6 +16799,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
 --- !u!4 &1279745810 stripped
@@ -16827,6 +16931,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
       propertyPath: m_Name
       value: Canyon1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25eb0eca2dc78c14095acae4369c92e4, type: 3}
@@ -17619,6 +17731,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
       propertyPath: m_Name
       value: Canyon3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
@@ -18650,6 +18770,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
@@ -20935,6 +21063,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
 --- !u!4 &1534525265 stripped
@@ -21087,6 +21223,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
       propertyPath: m_Name
       value: Canyon3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
@@ -21295,6 +21439,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
@@ -22412,6 +22564,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
 --- !u!4 &1639824964 stripped
@@ -22525,6 +22685,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
@@ -24406,6 +24574,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b88edf5f74f4142b0044e8b30b7e21, type: 3}
 --- !u!4 &1751019464 stripped
@@ -25814,6 +25990,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 058652e3389e15f4a9e53e4bfdf5fabe, type: 3}
       propertyPath: m_Name
       value: DropCandy4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 058652e3389e15f4a9e53e4bfdf5fabe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 058652e3389e15f4a9e53e4bfdf5fabe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 058652e3389e15f4a9e53e4bfdf5fabe, type: 3}
@@ -27305,6 +27489,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_Name
       value: Canyon2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}

@@ -79,6 +79,7 @@ private void MyInput()
     }
     if (Input.GetButtonDown("SwitchMags") && bulletsLeft < magazineSize && !reloading)
         Reload();
+    
 
     // Check if either trigger is being pressed
     if (readyToShoot && (shooting || rightTrigger > 0) && !reloading && bulletsLeft > 0)
@@ -160,6 +161,7 @@ void Shoot()
         reloading = true;
         Invoke("ReloadFinished", reloadTime);
         pMovement.Reloading();
+        audioManager.PlaySFX(audioManager.reloadMag);
     }
 
     private void ReloadFinished()

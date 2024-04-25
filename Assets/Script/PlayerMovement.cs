@@ -211,6 +211,7 @@ public class PlayerMovement : MonoBehaviour
     foreach (Collider c in cols)
     {
         animate.SetTrigger("Swinging");
+        audioManager.PlaySFX(audioManager.MeleeSlash);
         if (c.transform.root == transform)
             continue;
 

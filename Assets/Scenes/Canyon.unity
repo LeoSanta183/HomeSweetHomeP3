@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73986083, g: 0.32207048, b: 0.5678244, a: 1}
+  m_IndirectSpecularColor: {r: 0.7398608, g: 0.32207048, b: 0.5678244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7932,11 +7932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.007425978
+      value: -0.007425976
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.8232211
+      value: -0.823221
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.z
@@ -19331,15 +19331,16 @@ MonoBehaviour:
   SFXSource: {fileID: 280884630}
   EnemyHit: {fileID: 8300000, guid: 0758c4e8367bdf74fb9dd1635e9a624b, type: 3}
   SwitchWeapon: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
-  Bullet: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
+  Bullet: {fileID: 8300000, guid: 09802a234466bb544b566be842e0ee67, type: 3}
   CoinPickUp: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
-  MeleeSlash: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
+  MeleeSlash: {fileID: 8300000, guid: 33233d631325f094b957195181f564b8, type: 3}
   Footsteps: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
   buttonHover: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
-  Grapple: {fileID: 8300000, guid: 0ca647313e169e44facb1fc6cfcb98cb, type: 3}
+  Grapple: {fileID: 8300000, guid: 4ee2cdb8d2e43be48b5c795d75e60793, type: 3}
   CarrotGrunt: {fileID: 8300000, guid: 38e9a8ae5ac45d04e945e4ea30e5fbea, type: 3}
   BroccoliGrunt: {fileID: 8300000, guid: df362e317171b08499d71b4b887a83c5, type: 3}
   RockCollapse: {fileID: 8300000, guid: 3453ff67970f38947add6f81ca4a5538, type: 3}
+  reloadMag: {fileID: 8300000, guid: 30e528e0885569b4689106d97ac14973, type: 3}
 --- !u!4 &1432297579
 Transform:
   m_ObjectHideFlags: 0
@@ -20547,9 +20548,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8ed4d7631e010504f8f5f8a2fb22bf04, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f4133c4419415bf4f9c827967e6cc582, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

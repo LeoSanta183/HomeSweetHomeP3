@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.73986083, g: 0.32207048, b: 0.5678244, a: 1}
+  m_IndirectSpecularColor: {r: 0.7398608, g: 0.32207048, b: 0.5678244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2022,7 +2022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9133d9cd60969084eb52e88f49219a09, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.954487
+      value: -19.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9133d9cd60969084eb52e88f49219a09, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2291,8 +2291,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Retry
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1e8560423af0d5b4ca40d1938fac4606, type: 2}
+  m_sharedMaterial: {fileID: -7403312520108877756, guid: 1e8560423af0d5b4ca40d1938fac4606, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8147,31 +8147,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000000012796939
+      value: -0.0051871208
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000006813495
+      value: -0.11960024
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00000007488524
+      value: 0.013230482
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.56199294
+      value: 0.5617215
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.007425976
+      value: -0.0127480775
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.823221
+      value: -0.82406217
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287816, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0800992
+      value: 0.07230452
       objectReference: {fileID: 0}
     - target: {fileID: 1250751469310287831, guid: c21e90ccd42ce9545965206730d59269, type: 3}
       propertyPath: m_Layer
@@ -22695,11 +22695,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 1.1831
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1326
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_LocalScale.z
@@ -22711,7 +22711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.5
+      value: -27.237
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4d5367714c1de8e44b36b263218424c8, type: 3}
       propertyPath: m_LocalPosition.z
